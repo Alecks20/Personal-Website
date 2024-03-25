@@ -10,13 +10,20 @@ FAVICON = "https://cdn.a3d.pro/uploads/iawzhqbq8ssi-xxckj0k57-wh-pb493hxib-i6soj
 
 
 @app.route("/home")
-def index():
-    return render_template('error.html', text="Under Construction", favicon=FAVICON)
-
-
-@app.route("/")
 def index_redirect():
     return redirect(url_for("index"))
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/projects")
+def projects():
+    return render_template('error.html', text="Under Construction", favicon=FAVICON)
+
+@app.route("/blog")
+def blog():
+    return render_template('error.html', text="Under Construction", favicon=FAVICON)
 
 @app.errorhandler(404)
 def page_not_found(error):
