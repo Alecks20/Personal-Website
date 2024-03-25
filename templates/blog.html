@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="shortcut icon" href="{{ favicon }}">
+    <title>{{ text }}</title>
+</head>
+<body style="background-color: #0C0F15;"></body>
+<body>
+    <nav class="nav-container">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading">
+        <h1 class="title-text-box">Blog Posts</h1>
+      </div>
+      {% for post in posts %}
+        <div class="blog-box">
+          <a href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
+          <p class="blog-box-text">
+            {{ post.description }}
+          </p>
+        </div>
+      {% endfor %}
+
+      <div class="footer">
+        <p>Made with ❤️ by Atomic2ds</p>
+    </div>
+</body>
+</html>
