@@ -1,16 +1,8 @@
 
-@font-face {
-    font-family: 'primary';
-    src: url('fonts/primary.tff') formet('toff');
-    font-weight: normal;
+body {
+    font-family: "Poppins";
     font-size: normal;
 }
-
-body {
-    font-family: 'primary', sans-serif; /* Fallback to sans-serif if custom font fails to load */
-}
-
-
 
 .primary-box {
     width: 50%; 
@@ -33,7 +25,7 @@ body {
     margin: 30px auto;
     text-align: center; 
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     bottom: 0;
 }
 
@@ -74,7 +66,7 @@ body {
 }
 
 .card-text {
-    font-size: 17px;
+    font-size: 15px;
     margin-right: 18px;
 }
 
