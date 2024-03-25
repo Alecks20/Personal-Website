@@ -11,11 +11,11 @@ FAVICON = "https://cdn.a3d.pro/uploads/iawzhqbq8ssi-xxckj0k57-wh-pb493hxib-i6soj
 
 @app.route("/home")
 def index_redirect():
-    return redirect(url_for("index"))
+    return redirect(url_for("index"), favicon=FAVICON)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", favicon=FAVICON)
 
 @app.route("/projects")
 def projects():
