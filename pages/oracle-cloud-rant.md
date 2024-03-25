@@ -1,5 +1,5 @@
 title: Oracle Cloud Rant
-date: 2024-03-25
+date: 2024-03-10
 description: My problem with the oracle cloud hosting platform and why you should avoid using it
 slug: oracle-cloud-rant
 

@@ -1,5 +1,5 @@
 title: Common Misconceptions about IP Addresses
-date: 2024-03-25
+date: 2024-02-24
 description: As much as online game hackers want you to believe. You can't get someones address with an ip
 slug: ip-address-misconceptions
 
