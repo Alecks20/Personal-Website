@@ -29,19 +29,19 @@ def projects():
 def blog():
     posts = [post for post in flatpages if 'date' in post.meta]
     posts.sort(key=lambda item: item.meta['date'], reverse=True)
-    return render_template('blog.html', posts=posts)
+    return render_template('blog.html', posts=posts, favicon=FAVICON)
         
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", favicon=FAVICON)
 
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)
     html = markdown.markdown(page.body)
-    return render_template('blog-post.html', post=page, post_body=html)
+    return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON)
 
 @app.errorhandler(404)
 def page_not_found(error):
