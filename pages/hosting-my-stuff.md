@@ -9,7 +9,7 @@ If your a programmer, developer or just a self hoster you probably know how hard
 Every single thing on the internet needs to be hosted by some sort of server. Thats all the internet is, just millions of computers and servers interconnected. If your running your own apps on the internet, either programming them or just using open-source apps and hosting them, you typically need some sort of Linux server. There are thousands of hosting providers to choose from because of how easy it is to start a hosting business these days, so you need to choose wisely.
 
 ## Location effects everything
-Where you live can change a lot of things, I assume you want your stuff hosted reasonably close to where you live for the best speed when you access it. Different locations can affect the pricing and also the companies available in that region. Me being located in Western Australia means that I already had very limited options available for me as almost all major cloud hosting providers only had locations over in Sydney and Melbourne.
+Where you live can change a lot of things, I assume you want your stuff hosted reasonably close to where you live for the best speed when you access it. Different locations can affect the pricing and also the companies available in that region. I was already at a bit of a disadvantage just based on my location
 
 ## My Recommendations
 I am not an "expert" in this topic, this is what I have just found to be the best for me as a small developer/enthusiast, these have been great price to performance specifically for my use case. I have tested all of these myself as well.
