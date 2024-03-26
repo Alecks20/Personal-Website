@@ -12,6 +12,8 @@ app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
 import markdown
+ASSETS_FOLDER = "./assets"
+app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
 
 @app.route("/home")
 def index_redirect():
@@ -42,6 +44,10 @@ def page(path):
     page = flatpages.get_or_404(path)
     html = markdown.markdown(page.body)
     return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON)
+
+@app.route('/assets/<filename>', methods=['GET'])
+def get_api_image(filename):
+    return send_from_directory(app.config['ASSETS_FOLDER'], filename)
 
 @app.errorhandler(404)
 def page_not_found(error):
