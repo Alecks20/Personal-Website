@@ -20,7 +20,7 @@ def index_redirect():
     return redirect(url_for("index"))
 
 @app.route("/about")
-def index_redirect():
+def about_redirect():
     return redirect(url_for("about"))
 
 @app.route("/")
