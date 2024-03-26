@@ -17,7 +17,7 @@ app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
 
 @app.route("/home")
 def index_redirect():
-    return redirect(url_for("index"), favicon=FAVICON)
+    return redirect(url_for("index"))
 
 @app.route("/")
 def index():
