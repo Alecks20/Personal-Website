@@ -7,7 +7,3 @@ services:
     container_name: a3d_website
     ports:
       - "8033:8033"
-    volumes:
-      - ./library:/app/library
-      - ./api-uploads:/app/api-uploads
-      - ./uploads:/app/uploads
