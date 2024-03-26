@@ -19,7 +19,7 @@ app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
 def index_redirect():
     return redirect(url_for("index"))
 
-@app.route("/about")
+@app.route("/about-me")
 def about_redirect():
     return redirect(url_for("about"))
 
