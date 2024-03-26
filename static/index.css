@@ -157,6 +157,17 @@ body {
     margin-top: 50px;
 }
 
+.blog-date {
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    text-align: center; 
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .blog-description {
     margin: 5px auto;
     text-align: center; 

@@ -1,6 +1,6 @@
 title: Oracle Cloud Rant
 date: 2024-03-10
-description: My problem with the oracle cloud hosting platform and why you should avoid using it
+description: I used oracle cloud for a long time, had a good experience but then out of nowhere all my stuff was gone
 slug: oracle-cloud-rant
 
 For quite a while I used to use oracle cloud to host pretty much all of my stuff, from minecraft servers, to self hosted storage solutions and much more.
