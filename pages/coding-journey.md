@@ -1,6 +1,6 @@
 title: My Journey into Programming/Coding
 date: 2024-03-26
-description: Why and how I started getting into programming, development and managing infrastructure
+description: Why and how I started getting into programming, development and managing infrastructure at the age of 12, and how I ended up running all of these servers at the age of 14
 slug: coding-journey
 
 ## Introduction
