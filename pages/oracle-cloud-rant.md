@@ -1,6 +1,6 @@
 title: Oracle Cloud Rant
 date: 2024-03-10
-description: I used oracle cloud for a long time, had a good experience but then out of nowhere all my stuff was gone
+description: I used oracle cloud for a long time, had a good experience but then out of nowhere all my stuff was gone due to oracle randomly terminating all of my stuff with no notifcation at all, not even a simple email just saying "Your account has been terminated". Nope, I only got notified about it from my uptime monitor
 slug: oracle-cloud-rant
 
 For quite a while I used to use oracle cloud to host pretty much all of my stuff, from minecraft servers, to self hosted storage solutions and much more.

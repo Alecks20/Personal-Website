@@ -1,6 +1,6 @@
 title: Common Misconceptions about IP Addresses
 date: 2024-02-24
-description: As much as online game hackers want you to believe. You can't get someones address with an ip
+description: As much as 12 year old "hackers" want you to believe, you can't get someones address, exact coordinates, parents name and credit card information using an ip address.
 slug: ip-address-misconceptions
 
 Its a common misconception that if someone gets your ip address they can find your real home address, get your exact location, hack all your passwords, etc. None of this is true and the only real threat is something like a DDoS attack (Not the same as being doxxed). They can usually also see your general location like City or Neighborhood depending on where you are, you can see what your ip says about you on a site like this if your worried about it

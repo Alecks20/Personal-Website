@@ -1,6 +1,6 @@
 title: New Website
 date: 2024-03-25
-description: I have remade the website again! This time I have actually taken the time to perfect it and build it from scratch
+description: I have remade the website again! This time I have actually taken the time to perfect it and build it from scratch, it has pretty much all the same stuff as my old wordpress website but with a cooler and more unique design
 slug: new-website
 
 I have now remade the website once again! This time using html, css, python, docker and docker compose. All of the code for this website is open source on my github page in the A3D-Website repository.
