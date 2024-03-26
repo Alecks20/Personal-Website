@@ -25,7 +25,7 @@ def index():
 
 @app.route("/projects")
 def projects():
-    return render_template('error.html', text="Under Construction", favicon=FAVICON)
+    return render_template("projects.html", favicon=FAVICON)
 
 @app.route("/blog")
 def blog():
