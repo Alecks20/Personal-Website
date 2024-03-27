@@ -213,3 +213,9 @@ body {
     position: relative;
     text-align: left;
 }
+
+.gicus-box {
+    width: 50%; 
+    margin: 10px auto;  
+}
+
