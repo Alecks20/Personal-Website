@@ -15,6 +15,17 @@ import markdown
 ASSETS_FOLDER = "./assets"
 app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
 
+navigation = """
+<nav class="nav-container">
+ <ul class="nav">
+    <li><a href="/">Home</a></li>
+     <li><a href="/blog">Blog</a></li>
+     <li><a href="/glossary">Glossary</a></li>
+     <li><a href="/about">About</a></li>
+ </ul>
+</nav>
+"""
+
 @app.route("/home")
 def index_redirect():
     return redirect(url_for("index"))
@@ -25,29 +36,35 @@ def about_redirect():
 
 @app.route("/")
 def index():
-    return render_template("index.html", favicon=FAVICON)
+    return render_template("index.html", favicon=FAVICON, navigation=navigation)
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html", favicon=FAVICON)
+    return render_template("projects.html", favicon=FAVICON, navigation=navigation)
+
+@app.route("/glossary")
+def glossary():
+    return render_template("glossary.html", favicon=FAVICON, navigation=navigation)
 
 @app.route("/blog")
 def blog():
     posts = [post for post in flatpages if 'date' in post.meta]
     posts.sort(key=lambda item: item.meta['date'], reverse=True)
-    return render_template('blog.html', posts=posts, favicon=FAVICON)
+    return render_template('blog.html', posts=posts, favicon=FAVICON, navigation=navigation)
         
-
-
 @app.route("/about")
 def about():
-    return render_template("about.html", favicon=FAVICON)
+    return render_template("about.html", favicon=FAVICON, navigation=navigation)
+
+@app.route("/archives")
+def archives():
+    return render_template('error.html', text="Under Construction", favicon=FAVICON, navigation=navigation)
 
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)
     html = markdown.markdown(page.body)
-    return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON)
+    return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation)
 
 @app.route('/assets/<filename>', methods=['GET'])
 def get_api_image(filename):
@@ -55,11 +72,14 @@ def get_api_image(filename):
 
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template('error.html', text="404 Not Found", favicon=FAVICON), 404
+    return render_template('error.html', text="404 Not Found", favicon=FAVICON, navigation=navigation), 404
 
 @app.errorhandler(405)
 def method_not_allowed(error):
-  return render_template("error.html", text="Method Not Allowed", favicon=FAVICON), 405
+  return render_template("error.html", text="Method Not Allowed", favicon=FAVICON, navigation=navigation), 405
+
+
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True,port=8033)
