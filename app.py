@@ -60,6 +60,10 @@ def about():
 def archives():
     return render_template('error.html', text="Under Construction", favicon=FAVICON, navigation=navigation)
 
+@app.route("/deployments")
+def deployments():
+    return render_template('deployments.html', favicon=FAVICON, navigation=navigation)
+
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)
