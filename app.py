@@ -5,6 +5,7 @@ import random
 from dotenv import load_dotenv
 load_dotenv()
 from flask_flatpages import FlatPages
+from datetime import datetime
 
 app = Flask(__name__)
 FAVICON = "./assets/favicon.png"

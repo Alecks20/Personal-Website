@@ -198,6 +198,11 @@ body {
     line-height: 1.5;  
 }
 
+.blog-box-date {
+    font-size: 12px;
+    line-height: 1.5;  
+}
+
 .blog-box {
     width: 50%; 
     margin: 10px auto;  
