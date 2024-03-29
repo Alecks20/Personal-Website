@@ -58,7 +58,7 @@ def about():
 
 @app.route("/archives")
 def archives():
-    return render_template('error.html', text="Under Construction", favicon=FAVICON, navigation=navigation)
+    return render_template("archives.html", favicon=FAVICON, navigation=navigation)
 
 @app.route("/deployments")
 def deployments():
