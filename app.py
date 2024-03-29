@@ -27,6 +27,7 @@ navigation = """
 </nav>
 """
 
+
 @app.route("/home")
 def index_redirect():
     return redirect(url_for("index"))

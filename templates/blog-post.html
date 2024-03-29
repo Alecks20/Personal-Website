@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta content="A3D Blog - {{ post.meta['title'] }}" property="og:title" />
+    <meta content="{{ post.description }}" property="og:description" />
+    <meta content="https://a3d.pro/post/{{ post.slug }}" property="og:url" />
+    <meta content="#4C5770" data-react-helmet="true" name="theme-color" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="shortcut icon" href="{{ favicon }}">
-    <title>A3D - {{ post.meta['title'] }}</title>
+    <title>A3D Blog - {{ post.meta['title'] }}</title>
 </head>
 <body style="background-color: #0C0F15;">
 
