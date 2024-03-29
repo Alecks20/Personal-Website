@@ -9,4 +9,4 @@ You wil see the box below and it simply just lets you login with github, after y
 
 In some ways this system is actually better than Wordpress commenting, since a lot of people have github and it means that users don't have to share personal information with the website owner when they may not trust them that much with it.
 
-Have a good rest of your day/night.
+**Have a good rest of your day/night.**

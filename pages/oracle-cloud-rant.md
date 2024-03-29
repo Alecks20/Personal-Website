@@ -24,4 +24,4 @@ Another issue I have with oracles cloud service is that when you “delete” a 
 
 So that is why I will not ever be returning to this horrible cloud provider, their offering is great, but its free for a reason. Overall its not a bad offering, just make sure to take backups of your stuff or just only host stuff you don’t really care about on it.
 
-Thank you for listening to my yapping, have a good rest of your day/night.
+Thank you for listening to my yapping, **have a good rest of your day/night.**

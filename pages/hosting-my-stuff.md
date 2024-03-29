@@ -35,4 +35,4 @@ These are what I use to push my projects and apps to the public internet, it is 
 
 - Linux Distro (Ubuntu 22.04 LTS): Chose this linux distro as I am very familiar with it and it just does everything I need to do, im familiar with security on here and I have deployed it many times on my own hardware and in the cloud 
 
-I hope your learnt something and have a good rest of your day/night.
+I hope your learnt something and **have a good rest of your day/night.**

@@ -11,4 +11,4 @@ However you can't really do much with an ip address to identify a specific perso
 
 If you are worried about something like a DDoS attack (Spamming packets to your ip address to overload your router and make it so your internet doesn't work) what you can usually do is unplug your router for a few minutes then plug it back in to change your ip address. If that doesn't work you can try getting in contact with your internet provider by calling them or opening some sort of support ticket and asking them to change your ip address
 
-Have a good rest of your day/night.
+**Have a good rest of your day/night.**
