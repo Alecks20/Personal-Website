@@ -225,3 +225,7 @@ body {
     margin-bottom: 50px;
 }
 
+.project-languages {
+    font-size: 12px;
+    line-height: 1.5;  
+}
