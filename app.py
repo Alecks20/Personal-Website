@@ -40,6 +40,10 @@ def about_redirect():
 def index():
     return render_template("index.html", favicon=FAVICON, navigation=navigation)
 
+@app.route("/upload")
+def upload():
+    return render_template("upload.html", favicon=FAVICON, navigation=navigation)
+
 @app.route("/projects")
 def projects():
     return render_template("projects.html", favicon=FAVICON, navigation=navigation)

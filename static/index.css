@@ -229,3 +229,28 @@ body {
     font-size: 12px;
     line-height: 1.5;  
 }
+
+.upload-form {
+    width: 1000px;
+    margin: 5px auto;
+    text-align: center; 
+    color: white;
+    font-size: 15px;
+    bottom: 0;
+}
+
+.upload-box {
+    width: 50%; 
+    margin: 20px auto;  
+    padding: 30px;
+    border-radius: 10px;  
+     background-color: #161B26;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 20px);
+    margin-top: 50px;
+    position: relative;
+    text-align: left;
+}
