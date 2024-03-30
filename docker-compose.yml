@@ -4,6 +4,6 @@ services:
   website:
     restart: always
     build: .
-    container_name: a3d_website
+    container_name: a3d-website
     ports:
       - "8033:8033"
