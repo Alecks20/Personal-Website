@@ -136,13 +136,14 @@ body {
 
 .nav-container li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 17px;
     
 }
 
 .gray-icon {
     color: #646884;
-    margin-right: 4px;
+    margin-right: 5px;
+    font-size: 16px;
 }
 
 .nav li a {
@@ -156,7 +157,6 @@ body {
 .nav {
     position: relative;
 }
-
 
 .blog-title {
     padding: 5px;
