@@ -129,6 +129,7 @@ body {
     margin-right: 18px;
 }
 
+
 .nav-container ul {
    list-style: none; 
 }
@@ -136,6 +137,12 @@ body {
 .nav-container li {
     display: inline-block;
     margin-right: 20px;
+    
+}
+
+.gray-icon {
+    color: #646884;
+    margin-right: 4px;
 }
 
 .nav li a {
@@ -145,6 +152,11 @@ body {
     padding: auto;
     text-decoration: none;
 }
+
+.nav {
+    position: relative;
+}
+
 
 .blog-title {
     padding: 5px;

@@ -19,10 +19,10 @@ app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
 navigation = """
 <nav class="nav-container">
  <ul class="nav">
-    <li><a href="/">Home</a></li>
-     <li><a href="/blog">Blog</a></li>
-     <li><a href="/projects">Projects</a></li>
-     <li><a href="/about">About</a></li>
+     <i class="fas fa-home gray-icon"></i><li><a href="/">Home</a></li>
+     <i class="fas fa-book gray-icon"></i><li><a href="/blog">Blog</a></li>
+     <i class="fas fa-box gray-icon"></i><li><a href="/projects">Projects</a></li>
+     <i class="fas fa-circle-info gray-icon"></i><li><a href="/about">About</a></li>
  </ul>
 </nav>
 """
