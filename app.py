@@ -48,10 +48,6 @@ def upload():
 def projects():
     return render_template("projects.html", favicon=FAVICON, navigation=navigation)
 
-@app.route("/glossary")
-def glossary():
-    return render_template("glossary.html", favicon=FAVICON, navigation=navigation)
-
 @app.route("/blog")
 def blog():
     posts = [post for post in flatpages if 'date' in post.meta]
@@ -61,14 +57,6 @@ def blog():
 @app.route("/about")
 def about():
     return render_template("about.html", favicon=FAVICON, navigation=navigation)
-
-@app.route("/archives")
-def archives():
-    return render_template("archives.html", favicon=FAVICON, navigation=navigation)
-
-@app.route("/deployments")
-def deployments():
-    return render_template('deployments.html', favicon=FAVICON, navigation=navigation)
 
 @app.route('/post/<path>/')
 def page(path):

@@ -7,6 +7,6 @@ I have now remade the website once again! This time using html, css, python, doc
 
 I have been working on this project for the past few days. Building a website, cdn and the next thing im going to work on is an api server, which I also need to write documentation for.
 
-Last time I didn't enjoy web development because I was just using google gemini and chatgpt for everything, this time im doing some learning myself. You can still access all of my old websites: [Old Website](https://old.a3d.pro) and my [Legacy Website](https://legacy.a3d.pro), they are currently running on Cloudflare pages and my old vps server. I plan to keep them online for as long as I can but they will likely be taken down eventually.
+Last time I didn't enjoy web development because I was just using google gemini and chatgpt for everything, this time im doing some learning myself. You can still access all of my old websites: [Old Website](https://v1-website.a3d.pro) and my [Legacy Website](https://legacy-atomic2ds-page.a3d.pro), they are currently running on Cloudflare pages and my old vps server. I plan to keep them online for as long as I can but they will likely be taken down eventually.
 
 Other than that, **have a good rest of your day/night.**
