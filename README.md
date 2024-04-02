@@ -3,4 +3,4 @@
 - ### [📦 Public Analytics Page](https://umami.a3d.pro/share/nI1FDSuCssQJXF6h/a3d.pro)
 
 ## How I collect analytics
-I run a self-hosted instance of Umami, which is running on my cloud infrastructure. We have multiple layers of security in place to protect against attackers, this includes ssh keys, firewalls, etc.
+I run a self-hosted instance of Umami which collects information like your location, device type and software. We keep this data as secure as possible and even in the event of a data breach so little data is collected that you wouldn't need to worry
