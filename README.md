@@ -1,14 +1,9 @@
-## Project URLs
+# A3D Website
 
-- ### [🐳 Production Deployment](https://a3d.pro)
-- ### [📦 Public Analytics Page](https://umami.a3d.pro/share/nI1FDSuCssQJXF6h/a3d.pro)
+- This is the second revision of my a3d.pro website, im enjoying it a lot more this time because im actually trying to learn more about how html/css works instead of just using ai chatbots. 
 
-## About this project
-- This is the 2nd revision of the a3d.pro website, im enjoying a lot more this time
-- I needed an all in one website/app that could display everything like a blog, projects and about page
-- All the code is open-source for maximum transparency so you can see that your data is not being harvested
+- I built this because I needed an all-in-one solution for hosting my blog, about me and projects page. I keep this open-source so I can give other people inspiration and also provide maximum transparency so you can verify im not harvesting your data.
 
-## How I collect analytics
-- I run a self-hosted instance of Umami which collects information like your location, device type and software.
-- We keep this data as secure as possible by isolating it in its own environment
-- In the event of a data breach so little data is collected that you wouldn't need to worry
+- To collect analytics I run a self-hosted instance of Umami which collects very little information about you and is built purely to preserve privacy. Even in the event of a data breach so little data is collected that you wouldn't need to worry
+
+
