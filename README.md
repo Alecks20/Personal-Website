@@ -6,4 +6,7 @@
 
 - To collect analytics I run a self-hosted instance of Umami which collects very little information about you and is built purely to preserve privacy. Even in the event of a data breach so little data is collected that you wouldn't need to worry
 
+## Project URLs
 
+- ### [🐳 Production Deployment](https://a3d.pro)
+- ### [📦 Public Analytics Page](https://umami.a3d.pro/share/nI1FDSuCssQJXF6h/a3d.pro)
