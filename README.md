@@ -1,2 +1,6 @@
-# A3D Website
-My new custom made website, part of a bigger project im working on to master web development, im building an api server, media server and a personal website
+## My Personal Website
+- ### [🐳 Production Deployment](https://a3d.pro)
+- ### [📦 Public Analytics Page](https://umami.a3d.pro/share/nI1FDSuCssQJXF6h/a3d.pro)
+
+## How I collect analytics
+I run a self-hosted instance of Umami, which is running on my cloud infrastructure. We have multiple layers of security in place to protect against attackers, this includes ssh keys, firewalls, etc.
