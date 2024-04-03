@@ -8,7 +8,7 @@ from flask_flatpages import FlatPages
 from datetime import datetime
 
 app = Flask(__name__)
-FAVICON = "./assets/favicon.png"
+FAVICON = "https://assets.alecks.dev/branding/favicon.png"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
