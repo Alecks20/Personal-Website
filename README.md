@@ -1,8 +1,8 @@
 
 ## Project URLs
 
-- ### [🐳 Production Deployment](https://a3d.pro)
-- ### [📦 Public Analytics Page](https://umami.a3d.pro/share/nI1FDSuCssQJXF6h/a3d.pro)
+- ### [🐳 Production Deployment](https://alecks.dev)
+- ### [📦 Public Analytics Page](https://umami.alecks.dev/share/Rmx0xBhRJUEsqdpH/alecks.dev)
 
 ## About this project
 - We track website analytics on a self-hosted instance of umami
