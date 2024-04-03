@@ -68,10 +68,6 @@ def page(path):
     html = markdown.markdown(page.body)
     return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID)
 
-@app.route('/assets/<filename>', methods=['GET'])
-def get_api_image(filename):
-    return send_from_directory(app.config['ASSETS_FOLDER'], filename)
-
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('error.html', text="404 Not Found", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID), 404
