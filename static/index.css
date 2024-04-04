@@ -4,38 +4,6 @@ body {
     font-size: normal;
 }
 
-.primary-box {
-    width: 50%; 
-    margin: 30px auto;  
-    padding: 20px;
-    border-radius: 10px;  
-     background-color: #11141C;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 30px); 
-    margin-top: 100px;
-    position: relative;
-    text-align: left;
-}
-
-.first-box {
-    width: 50%; 
-    margin: 10px auto;  
-    padding: 20px;
-    border-radius: 10px;  
-     background-color: #161B26;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 60px); 
-    margin-top: 50px;
-    position: relative;
-    text-align: left;
-}
-
 
 .box-title {
     color: white;
@@ -78,113 +46,7 @@ body {
     bottom: 0;
 }
 
-.blog-footer {
-    width: 500px;
-    margin: 30px auto;
-    text-align: center; 
-    color: white;
-    font-size: 14px;
-    bottom: 0;
-    margin-top: 1px;
-}
 
-
-.title-error {
-    padding: 5px;
-    width: 400px;
-    margin: 20px auto;  
-    text-align: center; 
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
-.text-error {
-    width: 500px;
-    margin: 5px auto;
-    text-align: center; 
-    color: white;
-    font-size: 15px;
-}
-
-.circular-image {
-    border-radius: 50%;
-    width: 275px;
-    height: 275px;
-    border: 8px solid #0C0F15;
-    display: block;
-    float: left;
-    margin-left: 7px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-  }
-
-.card-title {
-    flex: 1;
-}
-
-.card-text {
-    font-size: 15px;
-    margin-right: 18px;
-}
-
-
-.nav-container ul {
-   list-style: none; 
-}
-
-.nav-container li {
-    display: inline-block;
-    margin-right: 17px;
-    
-}
-
-.gray-icon {
-    color: #45475A;
-    margin-right: 5px;
-    font-size: 16px;
-}
-
-.nav li a {
-    display: inline-block;
-    color: #45475A;
-    text-align: center;
-    padding: auto;
-    text-decoration: none;
-}
-
-.nav {
-    position: relative;
-}
-
-.blog-title {
-    padding: 5px;
-    width: 500px;
-    margin: auto;
-    text-align: center; 
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
-.blog-date {
-    padding: 5px;
-    width: 500px;
-    margin: auto;
-    text-align: center; 
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.blog-description {
-    margin: 5px auto;
-    text-align: center; 
-    color: white;
-}
 
 .title-text-box {
     padding: 5px;
@@ -198,38 +60,6 @@ body {
     margin-bottom: 30px;
 }
 
-.blog-box-title {
-    color: white;
-    font-size: 24px;
-    margin-bottom: 20px;  
-    font-weight: bold;
-}
-
-.blog-box-text {
-    font-size: 16px;
-    line-height: 1.5;  
-}
-
-.blog-box-date {
-    font-size: 12px;
-    line-height: 1.5;  
-}
-
-.blog-box {
-    width: 50%; 
-    margin: 10px auto;  
-    padding: 20px;
-    border-radius: 10px;  
-     background-color: #11141C;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 60px);
-    margin-top: 5px;
-    position: relative;
-    text-align: left;
-}
 
 .gicus-box {
     width: 50%; 
@@ -237,32 +67,8 @@ body {
     margin-bottom: 50px;
 }
 
-.project-languages {
-    font-size: 12px;
-    line-height: 1.5;  
-}
-
-.upload-form {
-    width: 1000px;
-    margin: 5px auto;
-    text-align: center; 
-    color: white;
-    font-size: 15px;
-    bottom: 0;
-}
-
-.upload-box {
-    width: 50%; 
-    margin: 20px auto;  
-    padding: 30px;
-    border-radius: 10px;  
-     background-color: #11141C;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 20px);
-    margin-top: 50px;
-    position: relative;
-    text-align: left;
+.gray-icon {
+    color: #45475A;
+    margin-right: 5px;
+    font-size: 16px;
 }

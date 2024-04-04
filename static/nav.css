@@ -1,0 +1,21 @@
+.nav-container ul {
+    list-style: none; 
+ }
+ 
+ .nav-container li {
+     display: inline-block;
+     margin-right: 17px;
+     
+ }
+ 
+ .nav li a {
+     display: inline-block;
+     color: #45475A;
+     text-align: center;
+     padding: auto;
+     text-decoration: none;
+ }
+ 
+ .nav {
+     position: relative;
+ }

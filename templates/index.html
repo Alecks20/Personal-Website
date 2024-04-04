@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="shortcut icon" href="{{ favicon }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
 
     <meta content="Alecks (Atomic2ds)" property="og:title" />
     <meta content="Self-taught developer and professional dumbass. Find my projects, blog and some information about me on this page." property="og:description" />
@@ -21,7 +23,7 @@
 
     {{ navigation | safe }}
 
-    <div class="primary-box">
+    <div class="card-box">
         <div class="content">
             <img src="https://assets.alecks.dev/branding/pfp2.jpg" alt="my profile picture" class="circular-image">
             <h1 class="card-title">Welcome to my website 👋</h1>
