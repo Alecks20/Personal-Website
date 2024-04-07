@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
     <title>Alecks - About Me</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
     {{ navigation | safe }}
 
       <div class="heading">
-        <h1 class="title-text-box">About Me</h1>
+        <h1 class="about-title-text-box">About Me</h1>
+        <p class="about-description-text">This page is a work in progress, it is not fully up to date</p>
     </div>
 
     <div class="box">
@@ -40,7 +42,7 @@
                 <li>Deploying windows and Linux virtual machines</li>
                 <li>Working with network locations and network drives</li>
                 <li>Configuring settings on my home router (Asus RT-AX55), port forwarding and running services from my house</li>
-                <li>Dealing with different types of partitions on Windows</li>
+                <li>Dealing with different types of partitions on Windows and Linux</li>
             </ul>
         </p>
     </div>
@@ -96,11 +98,14 @@
             <ul>
                 <li>BinaryLane (Expert, Running all my stuff on here)</li>
                 <li>Google Cloud Platform (Beginner)</li>
-                <li>DigitalOcean (Beginner)</li>
+                <li>DigitalOcean (Amateur)</li>
                 <li>Vultr (Amateur)</li>
                 <li>Sparked Host (Expert)</li>
                 <li>Oracle Cloud (Amateur)</li>
                 <li>OVHCloud (Amateur)</li>
+                <li>Sparked Host (Expert)</li>
+                <li>PebbleHost (Experienced)</li>
+                <li>Datalix (Very Experienced)</li>
             </ul>
         </p>
     </div>
@@ -126,9 +131,7 @@
         </p>
     </div>
 
-    <div class="footer">
-        <p>Made with ❤️ by Alecks</p>
-    </div>
+    {{ footer | safe }}
 
     <div class="gicus-box">
         <script src="https://giscus.app/client.js"
