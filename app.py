@@ -57,6 +57,10 @@ def upload():
 def projects():
     return render_template("projects.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
 
+@app.route("/status")
+def status():
+    return render_template("status.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+
 @app.route("/blog")
 def blog():
     posts = [post for post in flatpages if 'date' in post.meta]
