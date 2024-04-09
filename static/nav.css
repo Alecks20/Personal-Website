@@ -4,12 +4,12 @@
  
  .nav-container li {
      display: inline-block;
-     margin-right: 13.5px;
+     margin-right: 14px;
  }
  
  .nav li a {
      display: inline-block;
-     color: #45475A;
+     color: #5D607A;
      text-align: center;
      padding: auto;
      text-decoration: none;

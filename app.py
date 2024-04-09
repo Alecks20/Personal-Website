@@ -24,10 +24,9 @@ navigation = """
 <nav class="nav-container">
  <ul class="nav">
      <i class="fas fa-home gray-icon"></i><li><a href="/">Home</a></li>
-     <i class="fas fa-book gray-icon"></i><li><a href="/blog">Blog</a></li>
-     <i class="fas fa-box gray-icon"></i><li><a href="/projects">Projects</a></li>
-     <i class="fas fa-heartbeat gray-icon"></i><li><a href="/status">Status</a></li>
-     <i class="fas fa-circle-info gray-icon"></i><li><a href="/about">About</a></li>
+     <i class="fas fa-bookmark gray-icon"></i><li><a href="/blog">Blog</a></li>
+     <i class="fas fa-boxes-stacked gray-icon"></i><li><a href="/projects">Projects</a></li>
+     <i class="fas fa-address-card gray-icon"></i><li><a href="/about">About</a></li>
  </ul>
 </nav>
 """
@@ -46,9 +45,11 @@ def index_redirect():
 def about_redirect():
     return redirect(url_for("about"))
 
+active = "active"
+
 @app.route("/")
 def index():
-    return render_template("index.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template("index.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer,active_1=active)
 
 @app.route("/upload")
 def upload():
