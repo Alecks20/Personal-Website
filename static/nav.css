@@ -4,8 +4,7 @@
  
  .nav-container li {
      display: inline-block;
-     margin-right: 17px;
-     
+     margin-right: 14.5px;
  }
  
  .nav li a {
@@ -19,3 +18,8 @@
  .nav {
      position: relative;
  }
+
+.nav-container {
+    margin: 0 auto;
+    text-align: center;
+}
