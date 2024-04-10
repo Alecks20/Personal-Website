@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from flask_flatpages import FlatPages
 from datetime import datetime
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 FAVICON = "https://assets.alecks.dev/branding/favicon2.png"
@@ -91,6 +92,7 @@ def get_random_string_index() -> int:
     return random.SystemRandom().randint(0, len(ALLOWED_STRING_LETTERS) - 1)
 
 @app.route("/generate_password/<int:password_length>")
+@cross_origin()
 def generate_password(password_length: int):
     if (password_length > MAX_ALLOWED_PASSWORD_LENGTH or password_length < 1):
         raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
