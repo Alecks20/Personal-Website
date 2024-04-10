@@ -9,6 +9,8 @@ from datetime import datetime
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config["CORS_HEADERS"] = "Content-Type"
 FAVICON = "https://assets.alecks.dev/branding/favicon2.png"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
