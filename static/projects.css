@@ -2,3 +2,21 @@
     font-size: 12px;
     line-height: 1.5;  
 }
+
+.project-box {
+    padding: 25px;
+    border-radius: 10px;  
+     background-color: #11141C;
+    color: white;
+    text-align: left;
+    width: 91.5%;
+    
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-width: 100%;
+    align-content: center;
+}
