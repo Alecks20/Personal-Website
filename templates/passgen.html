@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='passgen.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
@@ -17,8 +18,9 @@
     {{ navigation | safe }}
 
     <div class="heading">
-        <h1 class="title-text-box">Passgen</h1>
-      </div>
+        <h1 class="passgen-title">Passgen</h1>
+        <p class="passgen-description">A sleek, minimal and efficient password generator</p>
+    </div>
 
     <div class="passgen-box">
 
@@ -37,9 +39,6 @@
     <div class="footer">
         <p> © 2024 Alecks / SuperRicky</p>
     </div>
-
-
-
 
     <script>
         const passwordLengthInput = document.getElementById('passwordLength');
