@@ -104,5 +104,9 @@ def page_not_found(error):
 def method_not_allowed(error):
   return render_template("error.html", text="Method Not Allowed", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer), 405
 
+@app.errorhandler(422)
+def unprocessable_entity(error):
+    return render_template("error.html", text="422 Unprocessable Request", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer), 422
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True,port=80)
