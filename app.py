@@ -81,7 +81,7 @@ def about():
 
 @app.route("/passgen")
 def passgen():
-    return render_template("passgen.html",footer=footer,navigation=navigation)
+    return render_template("passgen.html",favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
 
 @app.route('/post/<path>/')
 def page(path):
