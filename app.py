@@ -20,7 +20,7 @@ try:
 except:
     TRACKING_ID = " "
 
-MAX_ALLOWED_PASSWORD_LENGTH = 100000
+MAX_ALLOWED_PASSWORD_LENGTH = 256
 ALLOWED_STRING_LETTERS: list[str] = [character for character in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*"]
 
 navigation = """
