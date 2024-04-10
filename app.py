@@ -79,6 +79,10 @@ def blog():
 def about():
     return render_template("about.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
 
+@app.route("/passgen")
+def passgen():
+    return render_template("passgen.html",footer=footer,navigation=navigation)
+
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)

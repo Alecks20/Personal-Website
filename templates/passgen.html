@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='passgen.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">z
+    <title>Password Length Slider</title>
+</head>
+<body>
+    {{ navigation | safe }}
+
+    <div class="heading">
+        <h1 class="title-text-box">Passgen</h1>
+      </div>
+
+    <div class="passgen-box">
+
+
+      <div class="password-length">
+        <input type="range" id="passwordLength" min="1" max="256" value="16" class="password-slider">
+        <p id="passwordLengthValue" class="password-length">16</p>
+      </div>
+
+    </div>
+
+    <div class="passgen-box">
+      <p class="generated-password" id="generatedPassword"></p>
+    </div>
+
+    {{ footer | safe }}
+
+
+
+
+    <script>
+        const passwordLengthInput = document.getElementById('passwordLength');
+        const passwordLengthValue = document.getElementById('passwordLengthValue');
+        const generatedPassword = document.getElementById('generatedPassword');
+
+        passwordLengthInput.addEventListener('input', () => {
+          const length = passwordLengthInput.value;
+          passwordLengthValue.textContent = `${length}`;
+          getFakePassword()
+        });
+
+        passwordLengthInput.addEventListener('change', () => {
+          getPassword()
+        })
+
+        function getFakePassword() {
+          const length = passwordLengthInput.value;
+          if (length < 1 || length > 256) {
+            alert('Password length must be between 1 and 256 characters.');
+            return;
+          }
+
+          generatedPassword.textContent = "•".repeat(passwordLengthInput.value);
+        }
+
+        function getPassword() {
+          const length = passwordLengthInput.value;
+          if (length < 1 || length > 256) {
+            alert('Password length must be between 1 and 256 characters.');
+            return;
+          }
+
+          fetch(`https://alecks.dev/generate_password/${length}`)
+            .then(response => response.text())
+            .then(data => {
+              generatedPassword.textContent = JSON.parse(data)["secure_password"];
+            })
+            .catch(error => {
+              console.error('Error fetching password:', error);
+              generatedPassword.textContent = 'Error generating password.';
+            });
+        }
+    </script>
+</body>
+</html>
