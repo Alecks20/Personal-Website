@@ -11,7 +11,7 @@
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
-    <title>Alecks - {{ text }}</title>
+    <title>{{ text }} | Alecks</title>
 </head>
 <body>
   {{ navigation | safe }}

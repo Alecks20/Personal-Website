@@ -9,15 +9,15 @@
      background-color: #11141C;
     color: white;
     text-align: left;
-    width: 88%;
+    width: 88.5%;
 }
 
 .projects-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
+    row-gap: 8.5px;
     column-width: 100%;
     align-content: center;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 180px;
+    margin-left: 180px;
 }
