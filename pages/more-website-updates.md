@@ -1,6 +1,6 @@
 title: More Website Updates
 date: 2024-04-08
-description: More updates to my website, including branding changes, moving my assets to a cdn and much more.
+description: More updates to my website, including branding changes, moving my assets to cloudflare pages, tweaking colours, changing the footer and organising some things.
 slug: more-website-updates
 
 These are just some minor updates I made to the website I thought i'd note down

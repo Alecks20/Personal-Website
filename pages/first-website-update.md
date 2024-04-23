@@ -1,6 +1,6 @@
 title: 1st Website Update
 date: 2024-04-03
-description: I made some adjustments to the website like changing up the colours, updating the navigation adding icons and even changing the entire brand and domain of the site.
+description: Some major changes I made to the website like rebranding, colour changes, privacy preserving analytics, networking changes, security updates and more.
 slug: first-website-update
 
 Welcome to my first website update changelog! In this one I have made some pretty minor changes but they're still very cool and still definitely noticeable

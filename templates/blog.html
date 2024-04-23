@@ -24,6 +24,7 @@
 
       {% for post in posts %}
         <div class="blog-box">
+          <h3 class="blog-box-date">{{ post.time_ago }}</h3>
           <a href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
           <p class="blog-box-text">
             {{ post.description }}

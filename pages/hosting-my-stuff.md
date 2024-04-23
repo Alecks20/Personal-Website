@@ -1,4 +1,4 @@
-title: How I host my stuff as a programmer
+title: How I host my stuff as a developer
 date: 2024-03-26
 description: Hosting is something I have put a lot of time, effort and money into. (I still wouldn't say im an "expert" in this subject) but I have had a lot of experience in it. In this post I talk about why its important and my recommendations 
 slug: hosting-my-stuff

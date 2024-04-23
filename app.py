@@ -5,7 +5,7 @@ import random
 from dotenv import load_dotenv
 load_dotenv()
 from flask_flatpages import FlatPages
-from datetime import datetime
+from datetime import datetime, timedelta
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
@@ -26,6 +26,28 @@ except:
 MAX_ALLOWED_PASSWORD_LENGTH = 256
 ALLOWED_STRING_LETTERS: list[str] = [character for character in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*"]
 
+def calculate_time_ago(date):
+    current_date = datetime.now().date()
+    difference = current_date - date
+    days = difference.days
+    months = days // 30
+    years = days // 365
+    if years > 0:
+        if years == 1:
+            return "1 year ago"
+        else:
+            return f"{years} years ago"
+    elif months > 0:
+        if months == 1:
+            return "1 month ago"
+        else:
+            return f"{months} months ago"
+    else:
+        if days == 1:
+            return "1 day ago"
+        else:
+            return f"{days} days ago"
+        
 navigation = """
 <nav class="nav-container">
  <ul class="nav">
@@ -73,6 +95,8 @@ def status():
 def blog():
     posts = [post for post in flatpages if 'date' in post.meta]
     posts.sort(key=lambda item: item.meta['date'], reverse=True)
+    for post in posts:
+        post.meta['time_ago'] = calculate_time_ago(post.meta['date']) 
     return render_template('blog.html', posts=posts, favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
         
 @app.route("/about")
@@ -86,6 +110,7 @@ def passgen():
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)
+    page.meta['time_ago'] = calculate_time_ago(page.meta['date']) 
     html = markdown.markdown(page.body)
     return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
 
