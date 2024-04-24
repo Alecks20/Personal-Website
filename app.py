@@ -26,6 +26,8 @@ except:
 MAX_ALLOWED_PASSWORD_LENGTH = 256
 ALLOWED_STRING_LETTERS: list[str] = [character for character in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*"]
 
+current_year = datetime.now().year
+
 def calculate_time_ago(date):
     current_date = datetime.now().date()
     difference = current_date - date
@@ -59,9 +61,14 @@ navigation = """
 </nav>
 """
 
-footer = """
+if datetime.now().year == 2024:
+    footer_year = "2024"
+else:
+    footer_year = f"2024-{datetime.now().year}"
+
+footer = f"""
     <div class="footer">
-        <p> © 2024 Alecks</p>
+        <p> © {footer_year} Alecks</p>
     </div>
 """
 
