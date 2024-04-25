@@ -1,5 +1,5 @@
 .title-error {
-    padding: 5px;
+    padding: 1px;
     width: 400px;
     margin: 20px auto;  
     text-align: center; 
@@ -7,6 +7,7 @@
     font-size: 40px;
     font-weight: bold;
     margin-top: 50px;
+    vertical-align: middle;
 }
 
 .text-error {
@@ -15,4 +16,5 @@
     text-align: center; 
     color: white;
     font-size: 15px;
+    vertical-align: middle;
 }

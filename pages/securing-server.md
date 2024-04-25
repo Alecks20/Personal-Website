@@ -21,7 +21,7 @@ usermod -aG sudo declan
 ## Moving to SSH keys
 I think it should be pretty obvious that using plaintext passwords for logging into your system isn't the best idea, so thats why you should use something like PuTTYGen to generate an ssh key, generate a new key then copy and paste the public key generated into /home/declan/.ssh/authorized_keys (Change to your username)
 
-Each key is seperated by a new line, just paste the key with nothing else, it should be a 1 line text file
+Each key is seperated by a new line, simply paste the key in with no spaces or anything else around
 
 ## Changing the SSH configuration
 This process can differ depending on your host, but for most servers the ssh config is located in /etc/ssh/sshd_config.d, in this file you want to change the following values
@@ -42,7 +42,7 @@ PermitRootLogin no
 Port 13923
 ```
 
-This will disable password authentication, disable root login (Make sure you've setup another account) and allow you to login using public keys, which I showed how to setup above, change the ssh port
+This will disable password authentication, disable root login (Make sure you've setup another account) and allow you to login using ssh keys, which I showed how to setup above and change the ssh port
 
 Run the command below to apply the ssh configuration settings
 
@@ -51,7 +51,7 @@ sudo systemctl restart ssh
 ```
 
 ## Configuring a firewall
-You can use UFW which is preinstalled on ubuntu and can be installed on debian using apt, it can be easily setup using a few commands, a firewall
+You can use UFW which is preinstalled on ubuntu and can be installed on debian using apt, it can be easily setup using a few commands, a firewall blocks connections to ports or services you don't want exposed
 
 ### Allowing/Denying a port
 
