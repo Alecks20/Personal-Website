@@ -3,6 +3,8 @@ date: 2024-04-25
 description: In this post I talk about the processes and software I use to protect my server from being hacked into via ssh or being ddosed, it can be a time consuming and confusing process but this post makes it simple
 slug: securing-server
 
+This post is made for debian based linux distros, most of this stuff won't work on other distros
+
 ## Making a new account for logins
 When securing ssh on your server the first thing you want to to do is change the user you login as, start with making a new user with any username you want
 
@@ -46,6 +48,37 @@ Run the command below to apply the ssh configuration settings
 
 ```
 sudo systemctl restart ssh
+```
+
+## Configuring a firewall
+You can use UFW which is preinstalled on ubuntu and can be installed on debian using apt, it can be easily setup using a few commands
+
+### Allowing a port
+
+```
+ufw allow [port]
+```
+
+### Allowing a range of ports
+
+```
+ufw allow [port]:[port]/tcp
+```
+
+```
+ufw allow [port]:[port]/udp
+```
+
+### Enabling the firewall
+
+```
+ufw enable
+```
+
+### Checking firewall status
+
+```
+ufw status
 ```
 
 ## Extra: Adding ntfy notifcations on login
