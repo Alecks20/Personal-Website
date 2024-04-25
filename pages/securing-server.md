@@ -51,12 +51,16 @@ sudo systemctl restart ssh
 ```
 
 ## Configuring a firewall
-You can use UFW which is preinstalled on ubuntu and can be installed on debian using apt, it can be easily setup using a few commands
+You can use UFW which is preinstalled on ubuntu and can be installed on debian using apt, it can be easily setup using a few commands, a firewall
 
-### Allowing a port
+### Allowing/Denying a port
 
 ```
 ufw allow [port]
+```
+
+```
+ufw deny [port]
 ```
 
 ### Allowing a range of ports
