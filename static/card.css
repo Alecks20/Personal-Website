@@ -21,7 +21,7 @@
 }
 
 .card-box {
-    width: 50%; 
+    width: 950px; 
     margin: 30px auto;  
     padding: 20px;
     border-radius: 10px;  
@@ -36,3 +36,12 @@
     text-align: left;
     margin-top: 100px;
 }
+
+
+
+@media (max-width: 767px) {
+    .card-box {
+      width: 90%;
+      margin-top: 50px;
+    }
+  }

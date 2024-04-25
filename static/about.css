@@ -18,3 +18,17 @@
     margin-top: 0px;
     margin-bottom: 30px;
 }
+
+@media (max-width: 767px) {
+    .about-title-text-box {
+      width: 90%;
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .about-description-text {
+      width: 90%;
+      font-size: 14px;
+    }
+  }

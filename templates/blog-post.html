@@ -17,16 +17,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
     <link rel="shortcut icon" href="{{ favicon }}">
     <title>{{ post.meta['title'] }} | Alecks</title>
 </head>
 
     {{ navigation | safe }}
 
-    <div class="title-text-box">
+    <div class="heading">
         <h1 class="blog-title">{{ post.meta['title'] }}</h1>
         <h1 class="blog-date">{{ post.meta['time_ago'] }}</h1>
     </div>
+
     <div class="blog-box">
         <p class="blog-box-text">{{ post_body | safe }}</p>
     </div>

@@ -5,8 +5,8 @@
 
 .project-box {
     padding: 25px;
-    border-radius: 10px;  
-     background-color: #11141C;
+    border-radius: 10px;
+     background-color: hsl(224, 24%, 9%);
     color: white;
     text-align: left;
     width: 88.5%;
@@ -21,3 +21,20 @@
     margin-right: 180px;
     margin-left: 180px;
 }
+
+@media (max-width: 767px) {
+    .projects-list {
+      row-gap: 5px;
+      width: 95%;
+      margin-right: 0px;
+      margin-left: 0px;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .project-box {
+      width: 90%;
+    }
+  }

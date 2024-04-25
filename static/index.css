@@ -76,3 +76,29 @@ body {
 body {
     background-color: #090B0F;
 }
+
+@media (max-width: 767px) {
+    .gicus-box {
+      width: 90%;
+    }
+  }
+
+@media (max-width: 767px) {
+  .box {
+     width: 90%;
+}
+}
+
+
+@media (max-width: 767px) {
+    .footer {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .title-text-box {
+      width: 90%;
+      font-size: 40px;
+    }
+  }
