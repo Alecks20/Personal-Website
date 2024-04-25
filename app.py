@@ -44,11 +44,13 @@ def calculate_time_ago(date):
             return "1 month ago"
         else:
             return f"{months} months ago"
-    else:
+    elif days > 0:
         if days == 1:
             return "1 day ago"
         else:
             return f"{days} days ago"
+    else:
+        return "Today"
         
 navigation = """
 <nav class="nav-container">

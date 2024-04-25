@@ -4,7 +4,7 @@ description: Why and how I started getting into programming, development and man
 slug: coding-journey
 
 ## Introduction
-I have been programming for only about a year at this point, so far im really enjoying it. The pace, flexibility, freedom and much more makes me enjoy doing it over stuff like gaming. At this point im only 14 years old still in high school (Year 9) and im not sure what part of the tech industry to go into and get a job in. Currently im looking at either software engineer, network engineer or cloud engineer.
+I have been programming for only about a year at this point, so far im really enjoying it. The pace, flexibility, freedom and much more makes me enjoy doing it over stuff like gaming. At this point im not sure what part of the tech industry to go into and get a job in. Currently im looking at either software engineer, network engineer or cloud engineer.
 
 ## My first projects
 The first thing I built with code was a Discord bot, a discord.py 2.0 bot if you wanna be specific. It was just a simple little project I wanted to work on because I thought it would be cool having my own discord bot. It was at that point that I started to love the flexibility and freedom you got with programming your own stuff.
