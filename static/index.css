@@ -20,7 +20,7 @@ body {
 }
 
 .box {
-    width: 50%; 
+    width: 950px; 
     margin: 10px auto;  
     padding: 20px;
     border-radius: 10px;  
@@ -83,7 +83,7 @@ body {
     }
   }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .box {
      width: 90%;
 }

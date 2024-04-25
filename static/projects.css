@@ -22,19 +22,24 @@
     margin-left: 180px;
 }
 
-@media (max-width: 767px) {
+
+  @media (max-width: 1700px) {
     .projects-list {
-      row-gap: 5px;
+        width: 95%;
+        margin-right: 0px;
+        margin-left: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+      }
+  }
+
+  @media (max-width: 1000px) {
+    .projects-list {
       width: 95%;
       margin-right: 0px;
       margin-left: 0px;
       grid-template-columns: repeat(1, 1fr);
       margin: auto;
     }
-  }
 
-  @media (max-width: 767px) {
-    .project-box {
-      width: 90%;
-    }
   }

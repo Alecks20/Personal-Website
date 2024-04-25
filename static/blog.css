@@ -65,7 +65,7 @@
 }
 
 .blog-box {
-    width: 950px;
+    width: 930px;
     margin: 10px auto;  
     padding: 23px;
     border-radius: 10px;  
@@ -98,11 +98,12 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .blog-box {
       width: 90%;
     }
   }
+
 
 
   @media (max-width: 767px) {
