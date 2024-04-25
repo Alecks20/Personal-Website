@@ -11,13 +11,21 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 cors = CORS(app)
 app.config["CORS_HEADERS"] = "Content-Type"
-FAVICON = "https://assets.alecks.dev/branding/favicon2.png"
+FAVICON = "/assets/favicon.png"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
 import markdown
+
+
 ASSETS_FOLDER = "./assets"
 app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
+
+@app.route('/assets/<filename>', methods=['GET'])
+def get_api_image(filename):
+    return send_from_directory(app.config['ASSETS_FOLDER'], filename)
+
+
 try:
     TRACKING_ID = os.environ["TRACKING_ID"]
 except:
@@ -131,12 +139,12 @@ def get_random_string_index() -> int:
     """Generates a securely random integer ranging from 0 (the beginning of the ALLOWED_STRING_LETTERS list) to the end of the ALLOWED_STRING_LETTERS list"""
     return random.SystemRandom().randint(0, len(ALLOWED_STRING_LETTERS) - 1)
 
-@app.route("/generate_password/<int:password_length>")
-@cross_origin()
-def generate_password(password_length: int):
-    if (password_length > MAX_ALLOWED_PASSWORD_LENGTH or password_length < 1):
-        raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
-    return {"secure_password": get_random_string(password_length)}
+#@app.route("/generate_password/<int:password_length>")
+#@cross_origin()
+#def generate_password(password_length: int):
+#    if (password_length > MAX_ALLOWED_PASSWORD_LENGTH or password_length < 1):
+#        raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
+#    return {"secure_password": get_random_string(password_length)}
 
 @app.errorhandler(404)
 def page_not_found(error):
