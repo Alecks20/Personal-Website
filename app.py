@@ -165,4 +165,4 @@ def unprocessable_entity(error):
     return render_template("error.html", text="422 Unprocessable Request", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer), 422
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True,port=80)
+    app.run(host="0.0.0.0",debug=True,port=PORT)
