@@ -16,7 +16,13 @@ app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
 import markdown
+load_dotenv()
 
+from dotenv import load_dotenv
+try:
+    PORT = int(os.environ["PORT"])
+except:
+    PORT = 80
 
 ASSETS_FOLDER = "./assets"
 app.config['ASSETS_FOLDER'] = ASSETS_FOLDER
