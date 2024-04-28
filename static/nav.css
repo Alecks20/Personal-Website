@@ -3,24 +3,18 @@
  }
  
  .nav-container li {
+     margin-top: 5px;
      display: inline-block;
-     margin-right: 14px;
+     margin-right: 9px;
  }
  
  .nav li a {
-     display: inline-block;
      color: #5D607A;
-     text-align: center;
-     padding: auto;
      text-decoration: none;
  }
  
- .nav {
-     position: relative;
- }
 
 .nav-container {
-    margin: 0 auto;
     text-align: center;
 }
 
