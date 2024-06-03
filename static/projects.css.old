@@ -6,7 +6,7 @@
 .project-box {
     padding: 25px;
     border-radius: 10px;
-     background-color: #131820;
+     background-color: #171a20;
     color: white;
     text-align: left;
     width: 88.5%;

@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
 
-    <meta content="Alecks | Main Website" property="og:title" />
+    <meta content="Alecks — Linux SysAdmin" property="og:title" />
     <meta content="Im a self-taught teenage developer/programmer located in Asia Pacific with a passion for computers and the internet. My stengths are definitely in server management, infrastructure and stuff like the cloud." property="og:description" />
     <meta content="https://alecks.dev" property="og:url" />
     <meta content="#3d4f61" data-react-helmet="true" name="theme-color" />
@@ -19,7 +20,7 @@
 
     <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
 
-    <title>Home | Alecks</title>
+    <title>Alecks | Linux SysAdmin</title>
 </head>
 <body>
 
@@ -27,11 +28,11 @@
 
     <div class="card-box">
         <div class="content">
-            <img src="https://assets.alecks.dev/branding/pfp13.jpg" alt="my profile picture" class="circular-image">
-            <h1 class="card-title">Hello there!👋</h1>
-            <p class="card-text">I'm a self-taught developer located in Australia who is passionate about computers and commited to making something that changes the internet for the better, if not I just want to live comfortably and have a family.</p>
+            <img src="./content/avatar.jpg" alt="my profile picture" class="circular-image">
+            <h1 class="card-title">Hello mate!👋</h1>
+            <p class="card-text">I’m a young self-taught developer who is passionate about technology and has future admirations to become a network engineer, cloud engineer or system administor, I also happen to specialize and excel in all of these fields.</p>
 
-            <p class="card-text">My stengths are definitely in server management, infrastructure and stuff like the cloud. I also program in Python, HTML/CSS and im starting to learn JavaScript now. I've been programming for only about a year (Since Jan 2023).</p>
+            <p class="card-text">This is my home on the internet because its the only part owned entirely by me, if any of my accounts get terminated or I get erased off the internet this website will always be here as I plan to keep it up for a very long time.</p>
             
             <p class="card-text">As much as I enjoy computers, internet and networking. I'm only in my early teenage years, not fully consistent and more interested at making cherished memories with my friends at this point in time.</p>
         
@@ -39,6 +40,31 @@
     </div>
 
     {{ footer | safe }}
+
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 125px;">
+        <div></div>
+      </div>
+
+    <div class="homepage-box">
+        <p class="homepage-box-title">
+            Latest Posts.. from my Blog! 
+        </p>
+    </div>
+
+    {% for post in posts %}
+    <div class="blog-box">
+      <h3 class="blog-box-date">{{ post.time_ago }}</h3>
+      <a href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
+      <p class="blog-box-text">
+        {{ post.description }}
+      </p>
+    </div>
+    {% endfor %}
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 50px;">
+        <div></div>
+      </div>
 
 </body>
 </html>

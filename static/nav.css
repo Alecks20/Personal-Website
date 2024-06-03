@@ -1,21 +1,27 @@
 .nav-container ul {
     list-style: none; 
+    text-align: center; 
  }
  
  .nav-container li {
      margin-top: 5px;
      display: inline-block;
-     margin-right: 9px;
+     margin-right: 12px;
+     text-align: center; 
+     
  }
  
  .nav li a {
-     color: #5D607A;
+     color: #5c6069;
      text-decoration: none;
+     text-align: center; 
  }
  
 
 .nav-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
 }
 
 .remove-url-effect {
@@ -23,9 +29,33 @@
 }
 
 @media (max-width: 767px) {
-    .nav-container {
+    .nav-container ul {
       width: 100%;
       margin-left: 0;
       margin-right: 0;
+    }
+    .nav-container {
+        width: 100%;
+    }
+  }
+
+
+.gray-icon {
+    color: #5c6069;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.nav-text {
+    font-size: 17px;
+}
+
+@media (max-width: 767px) {
+    .nav-text {
+      font-size: 18px;
+    }
+    .gray-icon {
+        font-size: 18px;
+        display: none
     }
   }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="shortcut icon" href="{{ favicon }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
+    <title>My Projects | Alecks</title>
+</head>
+<body>
+    {{ navigation | safe }}
+
+    <div class="heading">
+        <h1 class="about-title-text-box">Experience</h1>
+        <p class="about-description-text"></p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Core Skills 🛠️</h1>
+        <p class="box-text">
+            <b>Networking</b> — Experienced with basic and advanced networking concepts like DNS, Firewalls, Ports, SSL, vLans, Wi-Fi bands, WAN/LAN, VPNs, UDP/TCP, NAT, etc.
+            <br><br>
+            <b>Linux</b> — I have ran Linux as a desktop and server operating system, deployed it in the cloud, on premises, on my own computer, gamed on it and got familiar with the terminal. All of my server management skills also apply to this, currently I only have experience with Debian based distros like Ubuntu, Mint and base Debian.
+            <br><br>
+            <b>Server Management</b> — Experienced with security, backing up stuff (BackBlaze is my service of choice), monitoring and ensuring smooth operations, using multiple ssh and sftp programs, comfortable with the Linux terminal, I also run my own Linux server from home running Ubuntu 24.04, find more about that here.
+            <br><br>
+            <b>Programming</b> — Currently not learning anything new in programming right now. I have less than 1 year of experience with HTML/CSS, and intermediate experience with Python. (Started early 2023)
+        </p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Programming 🪼</h1>
+        <p class="box-text">
+            <b>Python</b> — Intermediate experience, experienced with things like Discord.py/Pycord, basic knowledge of Flask and FastAPI, constantly learning new things like classes, async functions, etc.
+            <br><br>
+            <b>GitHub</b> — Use this to house pretty much all my projects, im also familiar with the Git cli using it on servers and my pc, used the package manager for docker images and also tried alternatives like GitLab and Gitea.
+            <br><br>
+            <b>HTML/CSS</b> — I only recently started learning HTML and then started learning CSS while in the middle of learning HTML, I’m not that experienced in this and would definitely not call myself anything close to a frontend developer, web developer or any of that.
+        </p>
+    </div>
+
+
+    <div class="box">
+        <h1 class="box-title">Hosting Experience 🦩</h1>
+        <p class="box-text">
+            <b>VPS/Dedicated Providers</b> — Hosting providers that aren’t considered a “Cloud Provider” but just provide simple and reliable services for running Linux systems.
+            <ul>
+                <li>Sparked Host (VPS, Web, Games), BinaryLane (VPS, Firewalls, VPCs), Datalix (VPS)</li>
+            </ul>
+            <b>Cloud Providers</b> — Platforms large companies use for running their services, for example: Netflix, Notion, Discord, Spotify, Snapchat and all the other tech startups use the cloud as its way more cost effective, more reliable and easier to scale.
+            <ul>
+                <li>Google Cloud Platform (Compute, Firewall, Billing), AWS (EC2), DigitalOcean (App Platform, Droplets, Spaces, Databases), OVHCloud (VPS), Oracle Cloud Infrastructure (Compute, Firewall)
+                    There are also many more I have tried but they are mainly game hosting services and I haven’t used them enough or they aren’t used by businesses so theres no point mentioning them.</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Software Experience 🐿️
+        </h1>
+        <p class="box-text">
+            <b>Docker</b> — A containerization software, used it myself to deploy my own and other peoples applications like web servers game servers services and more.
+            <br><br>
+            <b>Nginx</b> — Protect my web applications and services, acts as a reverse proxy to deploy an ssl certificate and get https working on my pages.
+            <br><br>
+            <b>Docker Compose</b> — Previously used to deploy a discord bot stack which included a MongoDB database and a Python container, used for a few months and made my own stacks with it, plus deployed other peoples compose stacks
+            <br><br>
+            <b>PM2 (Process Manager)</b> — Used with my Python discord bot to deploy it on my Linux vps server, works really well and is super easy to setup
+        </p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Dashboard Experience 🦂
+        </h1>
+        <p class="box-text">
+            <b>VirtFusion</b> — The vps dashboard Sparked Host uses, I use this on a daily basis to manage and keep track of my servers
+            <br><br>
+            <b>cPanel</b> — I’m familiar with it and find it easy to manage websites and other services with it, making me great for a small business or institution who needs someone to manage their web hosting
+            <br><br>  
+            <b>Portainer (Docker)</b> — A simple and easy to use dashboard I use to manage all of my docker containers, I’m knowledgeable about networks, containers, volumes, images and stacks.
+            <br><br>  
+            <b>WordPress</b> — Used for my personal website, I’m self-hosting an instance using Docker on my vps
+        </p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Basic Computer Skills 🦚
+        </h1>
+        <p class="box-text">
+            These are things the average person likely doesn’t know but are not uncommon skills in the IT field.
+
+            <ul>
+                <li>Reinstalling and setting up windows 10/11 or any other operating system on different computers</li>
+                <br> 
+                <li>Running Linux as a desktop OS and learning tons of stuff about it, like how the package manager works, basic terminal navigation, user permissions, etc.</li>
+                <br> 
+                <li>Working with any deploying many different virtual machines, including Ubuntu (Server and Desktop), Debian (11 and 12), Windows 10 and 11 and even things like TrueNAS Scale.</li>
+                <br> 
+                <li>Working with and configuring network locations and network drives</li>
+                <br> 
+                <li>Configuring settings on my home router (Asus RT-AX55), port forwarding and safely running services from my house, using my home server</li>
+                <br> 
+                <li>Dealing with different types of partitions on Windows and Linux (GParted, Windows partition manager)</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="box">
+        <h1 class="box-title">Get in contact 🦂</h1>
+        <p class="box-text">
+           Take at look at the <a class="remove-colour" href="/about">About Me</a>  page on my website, there is a section with my contact info on it
+        </p>
+    </div>
+
+
+
+
+
+
+</div>
+
+    {{ footer | safe }}
+</body>
+</html>

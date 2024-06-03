@@ -73,7 +73,7 @@
             return;
           }
 
-          fetch(`https://alecks.dev/generate_password/${length}`)
+          fetch(`./api/generate_password/${length}`)
             .then(response => response.text())
             .then(data => {
               generatedPassword.textContent = JSON.parse(data)["secure_password"];
