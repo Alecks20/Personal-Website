@@ -61,23 +61,24 @@ def calculate_time_ago(date):
         
 navigation = """
 <nav class="nav-container">
- <ul class="nav">
+   <ul class="icon-container nav">
      <i class="fas fa-home gray-icon"></i><li><a class="nav-text" href="/">Home</a></li>
+   </ul>
+   <ul class="icon-container nav">
      <i class="fas fa-bookmark gray-icon"></i><li><a class="nav-text" href="/blog">Blog</a></li>
+   </ul>
+   <ul class="icon-container nav">
      <i class="fas fa-screwdriver-wrench gray-icon"></i><li><a class="nav-text" href="/experience">Experience</a></li>
+   </ul>
+   <ul class="icon-container nav">
      <i class="fas fa-address-card gray-icon"></i><li><a class="nav-text" href="/about">About</a></li>
- </ul>
+   </ul>
 </nav>
 """
 
-if datetime.now().year == 2024:
-    footer_year = "2024"
-else:
-    footer_year = f"2024-{datetime.now().year}"
-
 footer = f"""
     <div class="footer">
-        <p> © {footer_year} Alecks</p>
+        <p> © 2024 Alecks</p>
     </div>
 """
 
@@ -95,7 +96,7 @@ active = "active"
 def index():
     posts = [post for post in flatpages if 'date' in post.meta]
     posts.sort(key=lambda item: item.meta['date'], reverse=True)
-    latest_posts = posts[:2]
+    latest_posts = posts[:3]
     for post in latest_posts:
         post.meta['time_ago'] = calculate_time_ago(post.meta['date']) 
     return render_template("index.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer,posts=latest_posts)

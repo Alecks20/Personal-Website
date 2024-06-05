@@ -1,4 +1,4 @@
-title: How I host my stuff as a developer
+title: Hosting my stuff as a developer
 date: 2024-03-26
 description: Hosting is something I have put a lot of time, effort and money into. (I still wouldn't say im an "expert" in this subject) but I have had a lot of experience in it. In this post I talk about why its important and my recommendations 
 slug: hosting-my-stuff
@@ -33,6 +33,4 @@ These are what I use to push my projects and apps to the public internet, it is 
 
 - Web Proxy (Nginx): Software that I use to secure my web servers with ssl and also deploy them on my domains, it also lets me run multiple services from the same ip address so I don't need a seperate server for every application.
 
-- Linux Distro (Ubuntu 22.04 LTS): Chose this linux distro as I am very familiar with it and it just does everything I need to do, im familiar with security on here and I have deployed it many times on my own hardware and in the cloud 
-
-I hope your learnt something and **have a good rest of your day/night.**
+- Linux Distro (Ubuntu 24.04 LTS): Chose this linux distro as I am very familiar with it and it just does everything I need to do, im familiar with security on here and I have deployed it many times on my own hardware and in the cloud 

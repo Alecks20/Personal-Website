@@ -1,28 +1,32 @@
 .nav-container ul {
-    list-style: none; 
-    text-align: center; 
- }
+    list-style: none;
+    text-align: center;
+    align-self: center;
+    display: inline-block;
+  }
  
  .nav-container li {
      margin-top: 5px;
      display: inline-block;
-     margin-right: 12px;
      text-align: center; 
+     align-self: center;
      
  }
  
  .nav li a {
-     color: #5c6069;
+     color: #86868b;
      text-decoration: none;
      text-align: center; 
+     align-self: center;
  }
  
 
-.nav-container {
+ .nav-container {
     display: flex;
     justify-content: center;
-    text-align: center; 
-}
+    text-align: center;
+    align-self: center;
+  }
 
 .remove-url-effect {
     color: white;
@@ -39,15 +43,24 @@
     }
   }
 
+.icon-container {
+    display: inline-block;
+    margin-right: -21px;
+} 
 
 .gray-icon {
-    color: #5c6069;
+    color: #86868b;
     margin-right: 5px;
     font-size: 17px;
 }
 
 .nav-text {
     font-size: 17px;
+}
+
+.icon-container:hover .gray-icon,
+.icon-container:hover .nav-text {
+    color: #3F4E87;
 }
 
 @media (max-width: 767px) {

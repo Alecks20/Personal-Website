@@ -1,22 +1,29 @@
 
 body {
-    font-family: "Poppins";
-    font-size: normal;
+    font-family: "Lexend";
 }
 
 
 .box-title {
     color: white;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 20px;  
     font-weight: bold;
+    text-decoration: none;
 }
 
 .box-text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;  
     color: white;
     text-decoration: none;
+}
+
+.box-list {
+  font-size: 17px;
+  line-height: 1.3;  
+  color: white;
+  text-decoration: none;
 }
 
 .box {
@@ -24,15 +31,14 @@ body {
     margin: 10px auto;  
     padding: 25px;
     border-radius: 10px;  
-     background-color: #171a20;
+    background-color: #17181a;
     color: white;
-    text-align: center;
     justify-content: center;
     align-items: center;
     height: calc(100% - 60px);
     margin-top: 5px;
     position: relative;
-    text-align: left;
+    text-decoration: none;
 }
 
 
@@ -42,11 +48,58 @@ body {
     margin: 30px auto;
     text-align: center; 
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     bottom: 0;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  clear: both;
+  margin-left: 625px;
+}
 
+.social-icon:hover {
+  color: #3F4E87;
+}
+
+.social-icon-old {
+  margin: 0 5px;
+  font-size: 30px;
+  color: white;
+  align-self: center;
+  text-align: right;
+}
+
+.social-icon {
+  font-size: 30px;
+  margin: 0 5px;
+  line-height: 1.5;  
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  align-self: center;
+}
+
+.view-more-posts-old {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  clear: both;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration-color: white;
+}
+
+.view-more-posts-old:hover {
+  text-decoration-color: #3F4E87;
+  color: #3F4E87;
+}
 
 .title-text-box {
     padding: 5px;
@@ -65,11 +118,13 @@ body {
     width: 50%; 
     margin: 10px auto;  
     margin-bottom: 50px;
+    color: #17181a;
 }
 
 
 body {
-    background-color: #0e1014;
+    /* background-color: #0e1014; */
+    background-color: #0e0f0f;
 }
 
 @media (max-width: 767px) {
@@ -99,12 +154,15 @@ body {
   }
 
 
-  .homepage-box-title {
+.homepage-box-title {
     font-size: 30px;
     line-height: 1.5;  
     color: white;
     text-decoration: none;
     font-weight: bold;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 .homepage-box {
@@ -112,13 +170,10 @@ body {
     margin: auto;  
     border-radius: 10px;  
     color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
     margin-top: 5px;
     position: relative;
-    text-align: left;
+    display: flex;
 }
 
 @media (max-width: 1000px) {
@@ -130,3 +185,23 @@ body {
 .remove-colour {
   color: white;
 }
+
+.view-more-posts {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  clear: both;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration-color: white;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.view-more-posts:hover {
+  text-decoration-color: #3F4E87;
+  color: #3F4E87;
+}
+

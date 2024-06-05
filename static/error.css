@@ -4,10 +4,9 @@
     margin: 20px auto;  
     text-align: center; 
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 50px;
-    vertical-align: middle;
 }
 
 .text-error {
@@ -15,6 +14,15 @@
     margin: 5px auto;
     text-align: center; 
     color: white;
-    font-size: 15px;
-    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+.error-footer {
+    width: 500px;
+    margin: 30px auto;
+    text-align: center; 
+    color: white;
+    font-size: 17px;
+    bottom: 0;
 }

@@ -1,0 +1,37 @@
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    clear: both;
+    margin-top: 15px;
+  }
+  
+.skill-icon:hover {
+    color: #3F4E87;
+}
+  
+.skill-icon {
+    font-size: 43px;
+    margin: 0 5px;
+    line-height: 1.5;  
+    color: rgb(193, 202, 214);
+    text-decoration: none;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    align-self: left;
+    margin-right: 5px;
+  }
+
+  
+.skill-text {
+    font-size: 20px;
+    margin: 0 5px;
+    line-height: 1.5;  
+    color: white;
+    text-decoration: none;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    align-self: left;
+ }

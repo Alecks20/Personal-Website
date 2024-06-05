@@ -11,12 +11,15 @@
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 
     <meta content="Alecks — Linux SysAdmin" property="og:title" />
-    <meta content="Im a self-taught teenage developer/programmer located in Asia Pacific with a passion for computers and the internet. My stengths are definitely in server management, infrastructure and stuff like the cloud." property="og:description" />
+    <meta content="I’m a young self-taught developer who is passionate about technology and has future admirations to become a network engineer, cloud engineer or systems administor.
+
+    " property="og:description" />
     <meta content="https://alecks.dev" property="og:url" />
-    <meta content="#3d4f61" data-react-helmet="true" name="theme-color" />
-    <meta content="https://assets.alecks.dev/branding/pfp8.jpg" property="og:image" />
+    <meta content="#30394B" data-react-helmet="true" name="theme-color" />
+    <meta content="https://alecks.dev/content/avatar.jpg" property="og:image" />
 
     <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
 
@@ -32,7 +35,7 @@
             <h1 class="card-title">Hello mate!👋</h1>
             <p class="card-text">I’m a young self-taught developer who is passionate about technology and has future admirations to become a network engineer, cloud engineer or system administor, I also happen to specialize and excel in all of these fields.</p>
 
-            <p class="card-text">This is my home on the internet because its the only part owned entirely by me, if any of my accounts get terminated or I get erased off the internet this website will always be here as I plan to keep it up for a very long time.</p>
+            <p class="card-text">This is my home on the internet because its the only part owned entirely by me, if any of my accounts get terminated or I get erased off the internet this website will always be here and I plan to keep it up for a very long time.</p>
             
             <p class="card-text">As much as I enjoy computers, internet and networking. I'm only in my early teenage years, not fully consistent and more interested at making cherished memories with my friends at this point in time.</p>
         
@@ -48,23 +51,38 @@
 
     <div class="homepage-box">
         <p class="homepage-box-title">
-            Latest Posts.. from my Blog! 
+            My latest posts 🪴
         </p>
+        <div class="social-icons">
+          <a href="https://github.com/alecks20" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/atomic2ds" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
     </div>
 
     {% for post in posts %}
-    <div class="blog-box">
+    <div class="homepage-blog-box">
       <h3 class="blog-box-date">{{ post.time_ago }}</h3>
-      <a href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
+      <a class="blog-box-title" href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
       <p class="blog-box-text">
         {{ post.description }}
       </p>
     </div>
     {% endfor %}
 
+    <a href="./blog" class="view-more-posts">
+          See them all
+    </a>
+
+    
     <div class="container" style="display: flex; justify-content: space-between; margin-top: 50px;">
         <div></div>
       </div>
+
+
 
 </body>
 </html>

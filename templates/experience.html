@@ -10,15 +10,75 @@
     <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='skills.css') }}">
     <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
     <title>My Projects | Alecks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 </head>
 <body>
     {{ navigation | safe }}
 
     <div class="heading">
         <h1 class="about-title-text-box">Experience</h1>
-        <p class="about-description-text"></p>
+    </div>
+
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 50px;">
+        <div></div>
+      </div>
+
+      <div class="box">
+        <a class="skill-text">Everything I know (Oversimplified)</a>
+        <div class="skill-icons">
+              <a href="https://python.org" target="_blank">
+                <i class="fab fa-python skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                <i class="fab fa-css3-alt skill-icon"></i>
+              </a>
+              <a href="https://docker.com" target="_blank">
+                <i class="fab fa-docker skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/GNOME_Terminal" target="_blank">
+                <i class="fa-solid fa-terminal skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">
+                <i class="fab fa-linux skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                <i class="fab fa-html5 skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/git" target="_blank">
+                <i class="fab fa-git skill-icon"></i>
+              </a>
+              <a href="https://mongodb.com" target="_blank">
+                <i class="fab fa-envira skill-icon"></i>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <i class="fab fa-github skill-icon"></i>
+              </a>
+              <a href="https://discord.com" target="_blank">
+                <i class="fab fa-discord skill-icon"></i>
+              </a>
+              <a href="https://wordpress.org" target="_blank">
+                <i class="fab fa-wordpress skill-icon"></i>
+              </a>
+              <a href="https://cloudflare.com" target="_blank"></a>
+                <i class="fab fa-cloudflare skill-icon"></i>
+              </a>
+              <a href="https://ubuntu.com" target="_blank">
+                <i class="fab fa-ubuntu skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank">
+                <i class="fa-solid fa-server skill-icon"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/coding" target="_blank">
+                <i class="fa-solid fa-code skill-icon"></i>
+              </a>
+              <a href="https://cpanel.net" target="_blank">
+                <i class="fab fa-cpanel skill-icon"></i>
+              </a>
+        </div>
     </div>
 
     <div class="box">
@@ -48,7 +108,7 @@
 
     <div class="box">
         <h1 class="box-title">Hosting Experience 🦩</h1>
-        <p class="box-text">
+        <div class="box-text">
             <b>VPS/Dedicated Providers</b> — Hosting providers that aren’t considered a “Cloud Provider” but just provide simple and reliable services for running Linux systems.
             <ul>
                 <li>Sparked Host (VPS, Web, Games), BinaryLane (VPS, Firewalls, VPCs), Datalix (VPS)</li>
@@ -58,7 +118,7 @@
                 <li>Google Cloud Platform (Compute, Firewall, Billing), AWS (EC2), DigitalOcean (App Platform, Droplets, Spaces, Databases), OVHCloud (VPS), Oracle Cloud Infrastructure (Compute, Firewall)
                     There are also many more I have tried but they are mainly game hosting services and I haven’t used them enough or they aren’t used by businesses so theres no point mentioning them.</li>
             </ul>
-        </p>
+        </div>
     </div>
 
     <div class="box">
@@ -94,8 +154,8 @@
         </h1>
         <p class="box-text">
             These are things the average person likely doesn’t know but are not uncommon skills in the IT field.
-
-            <ul>
+       
+            <ul class="box-list">
                 <li>Reinstalling and setting up windows 10/11 or any other operating system on different computers</li>
                 <br> 
                 <li>Running Linux as a desktop OS and learning tons of stuff about it, like how the package manager works, basic terminal navigation, user permissions, etc.</li>
@@ -112,7 +172,7 @@
     </div>
 
     <div class="box">
-        <h1 class="box-title">Get in contact 🦂</h1>
+        <h1 class="box-title">Get in contact 👋</h1>
         <p class="box-text">
            Take at look at the <a class="remove-colour" href="/about">About Me</a>  page on my website, there is a section with my contact info on it
         </p>

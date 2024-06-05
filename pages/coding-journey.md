@@ -29,6 +29,3 @@ Now we are in the present, and im learning how to write and code websites using 
 - Learn how to build ios and android apps
 
 Im just getting started at this point, theres still much more to come and im still young
-
-Have a good rest of your day/night
-

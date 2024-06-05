@@ -11,13 +11,18 @@
 
 .blog-title {
     padding: 5px;
-    width: 500px;
+    width: 1000px;
     margin: auto;
     text-align: center; 
     color: white;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: bold;
     margin-top: 50px;
+    text-decoration: none;
+}
+
+.blog-box-title:hover {
+    color: #3F4E87;
 }
 
 .blog-date-disabled {
@@ -37,7 +42,7 @@
     text-align: center; 
     color: white;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -45,38 +50,43 @@
     margin: 5px auto;
     text-align: center; 
     color: white;
+    text-decoration: none;
 }
 
-.blog-box-title {
-    color: white;
-    font-size: 23px;
-    margin-bottom: 20px;  
-    font-weight: bold;
-}
+
 
 .blog-box-text {
     font-size: 15.5px;
     line-height: 1.5;  
 }
 
+.blog-text {
+    font-size: 18px;
+    line-height: 1.5;  
+    text-decoration: none;
+}
+
+.blog-text a {
+    text-decoration: none;
+}
+
 .blog-box-date {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;  
 }
 
 .blog-box {
-    width: 950px;
+    width: 900px;
     margin: 10px auto;  
     padding: 23px;
     border-radius: 10px;  
-     background-color: #171a20;
+    background-color: #17181a;
     color: white;
-    text-align: center;
     justify-content: center;
     align-items: center;
     height: calc(100% - 60px);
     position: relative;
-    text-align: left;
+    text-decoration: none;
 }
 
 .blog-footer {
@@ -118,3 +128,33 @@
       font-size: 14px;
     }
   }
+
+
+  .homepage-blog-box {
+    width: 950px;
+    margin: 10px auto;  
+    padding: 23px;
+    border-radius: 10px;  
+     background-color: #17181a;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px);
+    position: relative;
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+    .homepage-blog-box {
+      width: 90%;
+    }
+  }
+
+.blog-box-title {
+    color: white;
+    font-size: 29px;
+    margin-bottom: 20px;  
+    font-weight: bold;
+    text-decoration: none;
+}

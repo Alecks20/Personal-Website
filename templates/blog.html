@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="shortcut icon" href="{{ favicon }}">
@@ -24,10 +25,11 @@
         <h1 class="title-text-box">Blog Posts</h1>
       </div>
 
+
       {% for post in posts %}
-        <div class="blog-box">
+        <div class="box">
           <h3 class="blog-box-date">{{ post.time_ago }}</h3>
-          <a href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
+          <a class="blog-box-title" href="/post/{{ post.slug }}"><h1 class="blog-box-title">{{ post.meta['title'] }}</h1></a>
           <p class="blog-box-text">
             {{ post.description }}
           </p>
