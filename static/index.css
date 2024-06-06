@@ -52,12 +52,22 @@ body {
     bottom: 0;
 }
 
+.footer-link {
+  text-decoration-color: rgb(141, 141, 141);
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration-color: #3F4E87;
+  color: #3F4E87;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   text-align: right;
   clear: both;
-  margin-left: 625px;
+  margin-left: 620px;
 }
 
 .social-icon:hover {
@@ -74,7 +84,7 @@ body {
 
 .social-icon {
   font-size: 30px;
-  margin: 0 5px;
+  margin: 5.5px;
   line-height: 1.5;  
   color: white;
   text-decoration: none;
@@ -163,6 +173,19 @@ body {
     justify-content: left;
     align-items: left;
     text-align: left;
+}
+
+.homepage-box-text {
+  font-size: 30px;
+  margin: 0 5px;
+  line-height: 1.5;  
+  color: white;
+  text-decoration: none;
+  
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  align-self: center;
 }
 
 .homepage-box {
