@@ -17,8 +17,15 @@
     width: 150%;
 }
 
+@media (max-width: 767px) {
+    .passgen-box {
+      width: 90%;
+      font-size: 40px;
+    }
+}
+
 .passgen-box {
-    width: 50%; 
+    width: 950px; 
     margin: 10px auto;  
     padding: 20px;
     border-radius: 10px;  
@@ -66,3 +73,61 @@
     margin-top: 0px;
     margin-bottom: 30px;
 }
+
+.passgen-text-box {
+    width: 970px; 
+    margin: auto;  
+    border-radius: 10px;  
+    color: white;
+    height: calc(100% - 100px);
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+}
+
+.passgen-text-box-title {
+    font-size: 30px;
+    line-height: 1.5;  
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.passgen-text-box-text {
+    font-size: 30px;
+    margin: 0 5px;
+    line-height: 1.5;  
+    color: white;
+    text-decoration: none;
+    
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    align-self: center;
+}
+
+
+@media (max-width: 1000px) {
+  .passgen-text-box-text {
+       width: 90%;
+  }
+  .passgen-text-box-title {
+    width: 90%;
+    font-size: 50px;
+  }
+  .passgen-box {
+    width: 90%;
+  }
+
+  .passgen-text-box-text {
+    display: none;
+  }
+
+  .passgen-text-box {
+    padding: 0;
+    margin-bottom: 1px;
+  }
+  }

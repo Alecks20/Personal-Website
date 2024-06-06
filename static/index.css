@@ -64,35 +64,25 @@ body {
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  text-align: right;
-  clear: both;
-  margin-left: 620px;
+  justify-content: right;
+  margin: auto;
 }
 
 .social-icon:hover {
   color: #3F4E87;
+  
 }
 
-.social-icon-old {
-  margin: 0 5px;
-  font-size: 30px;
-  color: white;
-  align-self: center;
-  text-align: right;
-}
 
 .social-icon {
-  font-size: 30px;
+  display: flex;
+  font-size: 33px;
   margin: 5.5px;
   line-height: 1.5;  
   color: white;
   text-decoration: none;
   font-weight: bold;
-  justify-content: right;
-  align-items: right;
-  text-align: right;
-  align-self: center;
+  display: inline-block;
 }
 
 .view-more-posts-old {
@@ -125,7 +115,7 @@ body {
 
 
 .gicus-box {
-    width: 50%; 
+    width: 900px; 
     margin: 10px auto;  
     margin-bottom: 50px;
     color: #17181a;
@@ -165,7 +155,7 @@ body {
 
 
 .homepage-box-title {
-    font-size: 30px;
+    font-size: 33px;
     line-height: 1.5;  
     color: white;
     text-decoration: none;
@@ -173,6 +163,7 @@ body {
     justify-content: left;
     align-items: left;
     text-align: left;
+    width: 90%;
 }
 
 .homepage-box-text {
@@ -181,6 +172,7 @@ body {
   line-height: 1.5;  
   color: white;
   text-decoration: none;
+  width: 950px;
   
   justify-content: right;
   align-items: right;
