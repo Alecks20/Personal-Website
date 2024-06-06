@@ -1,31 +1,25 @@
 .nav-container ul {
     list-style: none;
-    text-align: center;
-    align-self: center;
     display: inline-block;
+    
   }
  
  .nav-container li {
      margin-top: 5px;
      display: inline-block;
-     text-align: center; 
-     align-self: center;
-     
  }
  
  .nav li a {
      color: #86868b;
      text-decoration: none;
-     text-align: center; 
-     align-self: center;
  }
  
 
  .nav-container {
+    margin: auto;
     display: flex;
+    width: 900px;
     justify-content: center;
-    text-align: center;
-    align-self: center;
   }
 
 .remove-url-effect {
@@ -45,7 +39,9 @@
 
 .icon-container {
     display: inline-block;
-    margin-right: -21px;
+    margin-right: 0px;
+    padding-left: 0px;
+    margin: 10px;
 } 
 
 .gray-icon {
@@ -54,8 +50,10 @@
     font-size: 17px;
 }
 
+
 .nav-text {
     font-size: 17px;
+    justify-self: center;
 }
 
 .icon-container:hover .gray-icon,

@@ -71,6 +71,9 @@ navigation = """
      <i class="fas fa-screwdriver-wrench gray-icon"></i><li><a class="nav-text" href="/experience">Experience</a></li>
    </ul>
    <ul class="icon-container nav">
+     <i class="fas fa-key gray-icon"></i><li><a class="nav-text" href="/passgen">Passgen</a></li>
+   </ul>
+   <ul class="icon-container nav">
      <i class="fas fa-address-card gray-icon"></i><li><a class="nav-text" href="/about">About</a></li>
    </ul>
 </nav>
