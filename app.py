@@ -2,27 +2,21 @@ from flask import Flask, request, jsonify, send_from_directory, render_template,
 from werkzeug.exceptions import UnprocessableEntity, HTTPException
 import os
 import random
-from dotenv import load_dotenv
-load_dotenv()
 from flask_flatpages import FlatPages
 from datetime import datetime, timedelta
 from flask_cors import CORS, cross_origin
+import markdown
+
 
 app = Flask(__name__)
 cors = CORS(app)
+
 app.config["CORS_HEADERS"] = "Content-Type"
 FAVICON = "./content/favicon.gif"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
-import markdown
-load_dotenv()
 
-from dotenv import load_dotenv
-try:
-    PORT = int(os.environ["PORT"])
-except:
-    PORT = 80
 
 
 try:
@@ -154,10 +148,14 @@ def generate_password(password_length: int):
         raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
     return {"secure_password": get_random_string(password_length)}
 
+#Serving static content
 @app.route('/content/<filename>', methods=['GET'])
 def get_image(filename):
     return send_from_directory("./content/", filename)
 
+
+
+#Error handling
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('error.html', text="404 Not Found", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer), 404
@@ -170,5 +168,7 @@ def method_not_allowed(error):
 def unprocessable_entity(error):
     return render_template("error.html", text="422 Unprocessable Request", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer), 422
 
+
+# Running the app (Development)
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True,port=PORT)
+    app.run(host="0.0.0.0",debug=True,port=80)
