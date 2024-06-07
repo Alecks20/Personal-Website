@@ -18,4 +18,4 @@ Thats why I moved back to my Python/Flask based website (Soon to be Django) to r
 
 Theres much more to come! This is 2-3 days worth of work alone. I still need to finish off these and optimize them for mobile clients but the desktop experience should work perfectly fine.
 
-Speaking of the mobile experience, it is very rough right now, its still kinda usable but not reccomended unless you have to use it.
+Speaking of the mobile experience, it is very rough right now, its still kinda usable but not recommended unless you have to use it.

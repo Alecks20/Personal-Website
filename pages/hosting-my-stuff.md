@@ -14,7 +14,7 @@ Where you live can change a lot of things, I assume you want your stuff hosted r
 ## My Recommendations
 I am not an "expert" in this topic, this is what I have just found to be the best for me as a small developer/enthusiast, these have been great price to performance specifically for my use case. I have tested all of these myself as well.
 ### Specific Locations
-- Australia / Asia Pacific (Any part: Sydney, Melbourne, Adelaide, Perth, Singapore) I reccomend BinaryLane, they have competitve pricing, some of the most flexible plans I have ever seen and they are based in Australia as well
+- Australia / Asia Pacific (Any part: Sydney, Melbourne, Adelaide, Perth, Singapore) I recommend BinaryLane, they have competitve pricing, some of the most flexible plans I have ever seen and they are based in Australia as well
 
 - Germany: Datalix, they have really cheap plans with fast discord based support and web support. Since they are a small company they also have tons of really good deals happen every once in a while
 
