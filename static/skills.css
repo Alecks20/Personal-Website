@@ -1,5 +1,4 @@
 .skill-icons {
-    flex: 1;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -9,6 +8,12 @@
   
 .skill-icon:hover {
     color: #3F4E87;
+}
+
+@media (max-width: 100px) {
+  .sill-icons {
+    display: none;
+  }
 }
   
 .skill-icon {
@@ -35,4 +40,4 @@
     align-items: left;
     text-align: left;
     align-self: left;
- }
+}
