@@ -135,7 +135,7 @@
     margin: 10px auto;  
     padding: 23px;
     border-radius: 10px;  
-     background-color: #17181a;
+     background-color: var(--object-colour);
     color: white;
     text-align: center;
     justify-content: center;
