@@ -7,7 +7,7 @@
   }
   
 .skill-icon:hover {
-    color: #3F4E87;
+    color: var(--hover-colour);
 }
 
 @media (max-width: 100px) {
@@ -27,7 +27,7 @@
     text-align: left;
     align-self: left;
     margin-right: 5px;
-  }
+}
 
   
 .skill-text {

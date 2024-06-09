@@ -1,6 +1,13 @@
 
+:root {
+  --background-colour: #0e0f0f;
+  --object-colour: #17181a;
+  --hover-colour: #3F4E87;
+}
+
 body {
     font-family: "Lexend";
+    background-color: var(--background-colour);
 }
 
 
@@ -31,7 +38,7 @@ body {
     margin: 10px auto;  
     padding: 25px;
     border-radius: 10px;  
-    background-color: #17181a;
+    background-color: var(--object-colour);
     color: white;
     justify-content: center;
     align-items: center;
@@ -58,48 +65,10 @@ body {
 }
 
 .footer-link:hover {
-  text-decoration-color: #3F4E87;
-  color: #3F4E87;
+  text-decoration-color: var(--hover-colour);
+  color: var(--hover-colour);
 }
 
-.social-icons {
-  display: flex;
-  justify-content: right;
-  margin: auto;
-}
-
-.social-icon:hover {
-  color: #3F4E87;
-  
-}
-
-
-.social-icon {
-  display: flex;
-  font-size: 33px;
-  margin: 5.5px;
-  line-height: 1.5;  
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.view-more-posts-old {
-  display: flex;
-  justify-content: center;
-  text-align: right;
-  clear: both;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  text-decoration-color: white;
-}
-
-.view-more-posts-old:hover {
-  text-decoration-color: #3F4E87;
-  color: #3F4E87;
-}
 
 .title-text-box {
     padding: 5px;
@@ -118,13 +87,10 @@ body {
     width: 900px; 
     margin: 10px auto;  
     margin-bottom: 50px;
-    color: #17181a;
 }
 
-
-body {
-    /* background-color: #0e1014; */
-    background-color: #0e0f0f;
+.remove-colour {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -139,84 +105,16 @@ body {
 }
 }
 
-
 @media (max-width: 767px) {
     .footer {
       width: 90%;
     }
   }
 
-  @media (max-width: 767px) {
+ @media (max-width: 767px) {
     .title-text-box {
       width: 90%;
       font-size: 40px;
     }
-  }
-
-
-.homepage-box-title {
-    font-size: 33px;
-    line-height: 1.5;  
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    width: 90%;
-}
-
-.homepage-box-text {
-  font-size: 30px;
-  margin: 0 5px;
-  line-height: 1.5;  
-  color: white;
-  text-decoration: none;
-  width: 950px;
-  
-  justify-content: right;
-  align-items: right;
-  text-align: right;
-  align-self: center;
-}
-
-.homepage-box {
-    width: 970px; 
-    margin: auto;  
-    border-radius: 10px;  
-    color: white;
-    height: calc(100% - 100px);
-    margin-top: 5px;
-    position: relative;
-    display: flex;
-}
-
-@media (max-width: 1000px) {
-  .homepage-box {
-     width: 90%;
-}
-}
-
-.remove-colour {
-  color: white;
-}
-
-.view-more-posts {
-  display: flex;
-  justify-content: center;
-  text-align: right;
-  clear: both;
-  margin: auto;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-decoration-color: white;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-.view-more-posts:hover {
-  text-decoration-color: #3F4E87;
-  color: #3F4E87;
 }
 

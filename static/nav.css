@@ -60,7 +60,7 @@
 
 .icon-container:hover .gray-icon,
 .icon-container:hover .nav-text {
-    color: #3F4E87;
+    color: var(--hover-colour);
 }
 
 @media (max-width: 767px) {

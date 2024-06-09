@@ -22,7 +22,7 @@
 }
 
 .blog-box-title:hover {
-    color: #3F4E87;
+    color: var(--hover-colour);
 }
 
 .blog-date-disabled {
@@ -80,7 +80,7 @@
     margin: 10px auto;  
     padding: 23px;
     border-radius: 10px;  
-    background-color: #17181a;
+    background-color: var(--object-colour);
     color: white;
     justify-content: center;
     align-items: center;
