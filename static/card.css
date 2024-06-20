@@ -68,7 +68,7 @@ align-self: center;
   border-radius: 10px;  
   color: white;
   height: calc(100% - 100px);
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   display: flex;
 }
