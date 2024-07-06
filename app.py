@@ -12,7 +12,7 @@ app = Flask(__name__)
 cors = CORS(app)
 
 app.config["CORS_HEADERS"] = "Content-Type"
-FAVICON = "/public/static-assets/pepe-favicon.webp"
+FAVICON = "/public/static-assets/pepe-favicon.jpg"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
