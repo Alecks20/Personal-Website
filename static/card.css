@@ -128,8 +128,9 @@ align-self: center;
     }
 
     .circular-image {
-    width: 335px;
-    height: 335px;
+    width: 300px;
+    height: 300px;
+    
     }
   }
 

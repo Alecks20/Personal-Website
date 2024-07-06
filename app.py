@@ -12,11 +12,10 @@ app = Flask(__name__)
 cors = CORS(app)
 
 app.config["CORS_HEADERS"] = "Content-Type"
-FAVICON = "/content/favicon.gif"
+FAVICON = "/public/static-assets/pepe-favicon.webp"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
-
 
 
 try:
@@ -56,19 +55,19 @@ def calculate_time_ago(date):
 navigation = """
 <nav class="nav-container">
    <ul class="icon-container nav">
-     <i class="fas fa-home gray-icon"></i><li><a class="nav-text" href="/">Home</a></li>
+     <a class="nav-text" href="/"><i class="fas fa-home gray-icon"></i><li>Home</a></li>
    </ul>
    <ul class="icon-container nav">
-     <i class="fas fa-bookmark gray-icon"></i><li><a class="nav-text" href="/blog">Blog</a></li>
+     <a class="nav-text" href="/blog"><i class="fas fa-bookmark gray-icon"></i><li>Blog</a></li>
    </ul>
    <ul class="icon-container nav">
-     <i class="fas fa-screwdriver-wrench gray-icon"></i><li><a class="nav-text" href="/experience">Experience</a></li>
+     <a class="nav-text" href="/experience"><i class="fas fa-toolbox gray-icon"></i><li>Experience</a></li>
    </ul>
    <ul class="icon-container nav">
-     <i class="fas fa-key gray-icon"></i><li><a class="nav-text" href="/passgen">Passgen</a></li>
+     <a class="nav-text" href="/passgen"><i class="fas fa-key gray-icon"></i><li>Passgen</a></li>
    </ul>
    <ul class="icon-container nav">
-     <i class="fas fa-address-card gray-icon"></i><li><a class="nav-text" href="/about">About</a></li>
+     <a class="nav-text" href="/about"><i class="fas fa-address-card gray-icon"></i><li>About</a></li>
    </ul>
 </nav>
 """
@@ -141,17 +140,17 @@ def get_random_string_index() -> int:
     """Generates a securely random integer ranging from 0 (the beginning of the ALLOWED_STRING_LETTERS list) to the end of the ALLOWED_STRING_LETTERS list"""
     return random.SystemRandom().randint(0, len(ALLOWED_STRING_LETTERS) - 1)
 
-@app.route("/api/generate_password/<int:password_length>")
+@app.route("/api/generate-password/<int:password_length>")
 @cross_origin()
 def generate_password(password_length: int):
     if (password_length > MAX_ALLOWED_PASSWORD_LENGTH or password_length < 1):
         raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
-    return {"secure_password": get_random_string(password_length)}
+    return {"password": get_random_string(password_length)}
 
 #Serving static content
-@app.route('/content/<filename>', methods=['GET'])
+@app.route('/public/static-assets/<filename>', methods=['GET'])
 def get_image(filename):
-    return send_from_directory("./content/", filename)
+    return send_from_directory("./assets/", filename)
 
 
 

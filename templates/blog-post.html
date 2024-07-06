@@ -2,26 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta content="Alecks (Blog) - {{ post.meta['title'] }}" property="og:title" />
-    <meta content="{{ post.description }}" property="og:description" />
-    <meta content="https://a3d.pro/post/{{ post.slug }}" property="og:url" />
-    <meta content="#3d4f61" data-react-helmet="true" name="theme-color" />
-    <meta content="https://assets.alecks.dev/branding/pfp8.jpg" property="og:image" />
-    <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+    <link rel="stylesheet" href="/static/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.upset.dev/css?family=Lexend">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
     <link rel="shortcut icon" href="{{ favicon }}">
 
-    <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
     <title>{{ post.meta['title'] }} | Alecks</title>
 </head>
 
@@ -38,22 +27,5 @@
 
     {{ footer | safe }}
 
-    <div class="gicus-box">
-        <script src="https://giscus.app/client.js"
-           data-repo="alecks20/alecks-website"
-           data-repo-id="R_kgDOLlD3uQ"
-           data-category="General"
-           data-category-id="DIC_kwDOLlD3uc4CeRil"
-           data-mapping="url"
-           data-strict="1"
-           data-reactions-enabled="1"
-           data-emit-metadata="0"
-           data-input-position="bottom"
-           data-theme="dark_tritanopia"
-           data-lang="en"
-           crossorigin="anonymous"
-           async>
-        </script> 
-       </div>  
 </body>
 </html>

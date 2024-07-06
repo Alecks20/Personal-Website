@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <script defer src="https://umami.alecks.dev/script.js" data-website-id="{{ tracking_id }}"></script>
+    <link rel="stylesheet" href="https://fonts.upset.dev/css?family=Lexend">
     <link rel="shortcut icon" href="{{ favicon }}">
-    <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="15da12a7-878f-4a53-b826-fc57caf0101b"></script>
     <title>Passgen | Alecks</title>
 </head>
 <body>
@@ -84,10 +81,10 @@
             return;
           }
 
-          fetch(`./api/generate_password/${length}`)
+          fetch(`/api/generate-password/${length}`)
             .then(response => response.text())
             .then(data => {
-              generatedPassword.textContent = JSON.parse(data)["secure_password"];
+              generatedPassword.textContent = JSON.parse(data)["password"];
             })
             .catch(error => {
               console.error('Error fetching password:', error);
@@ -95,5 +92,6 @@
             });
         }
     </script>
+
 </body>
 </html>
