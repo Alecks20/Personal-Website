@@ -10,7 +10,7 @@
  }
  
  .nav li a {
-     color: #86868b;
+    color: var(--nav-icons);
      text-decoration: none;
  }
  
@@ -47,7 +47,7 @@
 } 
 
 .gray-icon {
-    color: #86868b;
+    color: var(--nav-icons);
     margin-right: 5px;
     font-size: 17px;
 }

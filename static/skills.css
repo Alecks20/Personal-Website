@@ -20,7 +20,7 @@
     font-size: 43px;
     margin: 0 5px;
     line-height: 1.5;  
-    color: rgb(193, 202, 214);
+    color: var(--nav-icons);
     text-decoration: none;
     justify-content: left;
     align-items: left;
@@ -34,7 +34,7 @@
     font-size: 20px;
     margin: 0 5px;
     line-height: 1.5;  
-    color: white;
+    color: var(--text-colour);
     text-decoration: none;
     justify-content: left;
     align-items: left;

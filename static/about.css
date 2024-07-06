@@ -3,7 +3,7 @@
     width: 700px;
     margin: auto;
     text-align: center; 
-    color: white;
+    color: var(--text-colour);
     font-size: 50px;
     font-weight: bold;
     margin-top: 50px;
@@ -13,7 +13,7 @@
     width: 500px;
     margin: 5px auto;
     text-align: center; 
-    color: white;
+    color: var(--text-colour);
     font-size: 17.5px;
     margin-top: 0px;
     margin-bottom: 30px;
