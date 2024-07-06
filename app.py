@@ -64,7 +64,7 @@ navigation = """
      <a class="nav-text" href="/experience"><i class="fas fa-toolbox gray-icon"></i><li>Experience</a></li>
    </ul>
    <ul class="icon-container nav">
-     <a class="nav-text" href="/passgen"><i class="fas fa-key gray-icon"></i><li>Passgen</a></li>
+     <a class="nav-text" href="/projects"><i class="fas fa-boxes gray-icon"></i><li>Projects</a></li>
    </ul>
    <ul class="icon-container nav">
      <a class="nav-text" href="/about"><i class="fas fa-address-card gray-icon"></i><li>About</a></li>
@@ -74,7 +74,7 @@ navigation = """
 
 footer = f"""
     <div class="footer">
-        <p> © 2024 Alecks</p>
+        <p>© 2024 Alecks</p>
     </div>
 """
 
@@ -97,12 +97,12 @@ def index():
         post.meta['time_ago'] = calculate_time_ago(post.meta['date']) 
     return render_template("index.html", favicon=FAVICON, navigation=navigation, footer=footer, posts=latest_posts)
 
-@app.route("/upload")
-def upload():
-    return render_template("upload.html", favicon=FAVICON, navigation=navigation, footer=footer)
+@app.route("/projects")
+def projects():
+    return render_template("projects.html", favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route("/experience")
-def projects():
+def experience():
     return render_template("experience.html", favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route("/blog")

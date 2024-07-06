@@ -67,7 +67,7 @@ align-self: center;
   margin: auto;  
   border-radius: 10px;
   height: calc(100% - 100px);
-  margin-top: 50px;
+  margin-top: 25px;
   position: relative;
   display: flex;
 }

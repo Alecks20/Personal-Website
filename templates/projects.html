@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://fonts.upset.dev/css?family=Lexend">
+    <link rel="shortcut icon" href="{{ favicon }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='passgen.css') }}">
+    <title>My Projects | Alecks</title>
+</head>
+<body>
+    {{ navigation | safe }}
+
+      <div class="heading">
+        <h1 class="about-title-text-box">My Projects</h1>
+      </div>
+
+      
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 30px;">
+        <div></div>
+    </div>
+
+
+      <div class="projects-divider-box">
+        <p class="passgen-text-box-title">
+            Websites
+          </p>
+          <p class="passgen-text-box-text">
+            - Simple HTML/CSS pages and applications
+          </p>
+      </div>
+
+
+    <div class="projects-list">
+
+
+      <div class="project-box">
+        <h3 class="project-languages">Flask, HTML/CSS, Docker & JavaScript</h3>
+        <a class="project-box-title" href="https://github.com/Alecks20/Personal-Website" target="_blank"><h1 class="project-box-title">Personal Website</h1></a>
+        <p class="project-box-text">
+            Active production website, features a password generator, experience page, blog posts, landing page and section for people to learn more about me.
+        </p>
+      </div>
+
+      <div class="project-box">
+        <h3 class="project-languages">Not Maintained - Flask, JavaScript</h3>
+        <a class="project-box-title" href="/passgen" target="_blank"><h1 class="project-box-title">Passgen</h1></a>
+        <p class="project-box-text">
+           Simple and minimal password generator that I designed with <a class="footer-link" href="https://github.com/SuperRicky14" target="_blank">SuperRicky14</a>, was just a project we made for fun to help people use better passwords.
+        </p>
+      </div>
+
+
+      <div class="project-box">
+        <h3 class="project-languages">Archived - Flask, HTML/CSS, Docker</h3>
+        <a class="project-box-title" href="https://github.com/Alecks20/Personal-Website/tree/75dc73fac8df19bd1431034e7652fa0cd5fd7872" target="_blank"><h1 class="project-box-title">A3D Website (v2)</h1></a>
+        <p class="project-box-text">
+            The original website my current personal website is based upon, github link takes you to the last commit before redesigning to the "Alecks" branding.
+        </p>
+      </div>
+
+
+    <div class="project-box">
+        <h3 class="project-languages">Archived - HTML/CSS</h3>
+        <a class="project-box-title" href="https://a3d-website-v1.pages.dev" target="_blank"><h1 class="project-box-title">A3D Website (v1)</h1></a>
+        <p class="project-box-text">
+           Features a simple projects page, about page and landing page with links to other A3D services like our status page.
+        </p>
+      </div>
+
+    <div class="project-box">
+        <h3 class="project-languages">Archived - HTML/CSS</h3>
+        <a class="project-box-title" href="https://legacy-website.pages.dev" target="_blank"><h1 class="project-box-title">GitHub landing page</h1></a>
+        <p class="project-box-text">
+           Pretty empty landing page with a big background, discord widget and links to all of my old socials like Replit, Github, Twitter and Youtube.
+        </p>
+    </div>
+
+    </div>
+
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 40px;">
+        <div></div>
+    </div>
+
+      <div class="projects-divider-box">
+        <p class="passgen-text-box-title">
+            Discord Bots
+          </p>
+          <p class="passgen-text-box-text">
+            - Clients on Discord that can be programmed
+          </p>
+      </div>
+
+
+    <div class="projects-list">
+
+
+        <div class="project-box">
+        <h3 class="project-languages">Discontinued - Discord.py, Docker & MongoDB</h3>
+        <a class="project-box-title" href="https://github.com/Alecks20/Cloudy" target="_blank"><h1 class="project-box-title">Cloudy Bot</h1></a>
+        <p class="project-box-text">
+            My attempt at building a sleek, responsive and feature packed multipurpose discord bot. Made in early 2023 shutdown in early 2024
+        </p>
+      </div>
+
+      <div class="project-box">
+        <h3 class="project-languages">Discontinued - Discord.py</h3>
+        <a class="project-box-title" href="https://github.com/Alecks20/Panda-py" target="_blank"><h1 class="project-box-title">Panda-py</h1></a>
+        <p class="project-box-text">
+            My first discord bot coded in python using discord.py, only works on replit and doesn't have many features (Just some basic utilities every bot has)
+        </p>
+      </div>
+    </div>
+
+
+    </div>
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 40px;">
+        <div></div>
+    </div>
+
+      <div class="projects-divider-box">
+        <p class="passgen-text-box-title">
+            Web Services
+          </p>
+          <p class="passgen-text-box-text">
+            - Includes media servers, cdns, etc.
+          </p>
+      </div>
+
+    <div class="projects-list">
+
+        <div class="project-box">
+            <h3 class="project-languages">Archived - Flask, Docker</h3>
+            <a class="project-box-title" href="https://github.com/Alecks20/Cloudy-Media" target="_blank"><h1 class="project-box-title">Cloudy Media</h1></a>
+            <p class="project-box-text">
+                Used for persistent storage when images are uploaded to the Art module, designed to be run using Docker Compose alongside Cloudy
+            </p>
+          </div>
+
+          <div class="project-box">
+            <h3 class="project-languages">Archived - Flask, Docker</h3>
+            <a class="project-box-title" href="https://github.com/Alecks20/Alecks-Media" target="_blank"><h1 class="project-box-title">Alecks Media</h1></a>
+            <p class="project-box-text">
+                Custom media server I built for housing content when I was first learning Flask, also included a custom GUI which used to be deployed on this website.
+            </p>
+          </div>
+
+          <div class="project-box">
+            <h3 class="project-languages">Archived - HTML/CSS</h3>
+            <a class="project-box-title" href="https://alecks-media-gui.pages.dev" target="_blank"><h1 class="project-box-title">Alecks Media GUI</h1></a>
+            <p class="project-box-text">
+               Allows you to enter an auth token and url to upload content to any server running the Alecks Media docker container.
+            </p>
+          </div>
+
+    </div>
+
+
+    <div class="container" style="display: flex; justify-content: space-between; margin-top: 40px;">
+        <div></div>
+    </div>
+
+      <div class="projects-divider-box">
+        <p class="passgen-text-box-title">
+            Scripts
+          </p>
+          <p class="passgen-text-box-text">
+            - Simple scripts I've made primarily in Python
+          </p>
+      </div>
+
+    <div class="projects-list">
+
+        <div class="project-box">
+            <h3 class="project-languages">Replit Archive - Python</h3>
+            <a class="project-box-title" href="https://replit.com/@av449/Shop-Simulator" target="_blank"><h1 class="project-box-title">Shop Simulator</h1></a>
+            <p class="project-box-text">
+                Simple game I made when first learning Python, never ended up finishing it cause I moved onto other projects.
+            </p>
+          </div>
+
+          <div class="project-box">
+            <h3 class="project-languages">Replit Archive - Python</h3>
+            <a class="project-box-title" href="https://replit.com/@av449/Shop-Simulator-Remastered" target="_blank"><h1 class="project-box-title">Shop Simulator Remastered</h1></a>
+            <p class="project-box-text">
+                Yet another game I never finished while learning Python, was supported to be an improved version and also include a Discord Bot.
+            </p>
+          </div>
+
+          <div class="project-box">
+            <h3 class="project-languages">Replit Archive - Python</h3>
+            <a class="project-box-title" href="https://replit.com/@av449/Shop-Simulator-Remastered" target="_blank"><h1 class="project-box-title">Shop Simulator Remastered</h1></a>
+            <p class="project-box-text">
+                My first ever Python script I made, just a simple game where you get to order some Coffee.
+            </p>
+          </div>
+
+        <div class="project-box">
+            <h3 class="project-languages">Privated - Python</h3>
+            <a class="project-box-title" href="https://github.com/Alecks20/Mongo-Migrator" target="_blank"><h1 class="project-box-title">Mongo Migrator</h1></a>
+            <p class="project-box-text">
+                Simple Python scripted I made using ChatGPT to quickly migrate my MongoDB server contents over to a new server.
+            </p>
+          </div>
+    </div>
+
+
+
+</div>
+
+    {{ footer | safe }}
+</body>
+</html>
