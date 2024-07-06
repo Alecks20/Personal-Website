@@ -95,19 +95,15 @@ def index():
     latest_posts = posts[:3]
     for post in latest_posts:
         post.meta['time_ago'] = calculate_time_ago(post.meta['date']) 
-    return render_template("index.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer,posts=latest_posts)
+    return render_template("index.html", favicon=FAVICON, navigation=navigation, footer=footer, posts=latest_posts)
 
 @app.route("/upload")
 def upload():
-    return render_template("upload.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template("upload.html", favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route("/experience")
 def projects():
-    return render_template("experience.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
-
-@app.route("/status")
-def status():
-    return render_template("status.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template("experience.html", favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route("/blog")
 def blog():
@@ -115,22 +111,22 @@ def blog():
     posts.sort(key=lambda item: item.meta['date'], reverse=True)
     for post in posts:
         post.meta['time_ago'] = calculate_time_ago(post.meta['date']) 
-    return render_template('blog.html', posts=posts, favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template('blog.html', posts=posts, favicon=FAVICON, navigation=navigation, footer=footer)
         
 @app.route("/about")
 def about():
-    return render_template("about.html", favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template("about.html", favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route("/passgen")
 def passgen():
-    return render_template("passgen.html",favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template("passgen.html",favicon=FAVICON, navigation=navigation, footer=footer)
 
 @app.route('/post/<path>/')
 def page(path):
     page = flatpages.get_or_404(path)
     page.meta['time_ago'] = calculate_time_ago(page.meta['date']) 
     html = markdown.markdown(page.body)
-    return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation, tracking_id=TRACKING_ID,footer=footer)
+    return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation, footer=footer)
 
 def get_random_string(length: int) -> str:
     """Generates a securely random string with the length provided"""
