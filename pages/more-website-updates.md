@@ -11,7 +11,7 @@ These are just some minor updates I made to the website I thought i'd note down
 - Slightly tweaked colours, made some stuff a bit darker, boxes are the same though
 - Changed the site footer to something a bit more minimal
 
-### Backend changes
+### Backend changes 
 
 - Moved to hosting my assets on a Cloudflare pages site instead of directly from my website, saving bandwidth, ensuring 100% availability and making load times faster
 - Made all the page background colours located on the index.css instead of being individually set for each one

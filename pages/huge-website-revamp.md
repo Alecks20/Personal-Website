@@ -8,7 +8,7 @@ I was using wordpress for ~2 months and I just got bored of it, yeah there was s
 
 Thats why I moved back to my Python/Flask based website (Soon to be Django) to revamp the whole website and make it way better than anything I could do with wordpress.
 
-## The Changelog (Lots of cool stuff)
+## The Changelog (Lots of cool stuff) 🌟
 - Fully revamped the colours of the site, making it look really nice to look at.
 - Make some of the text bigger and more readable, increasing the line size as well.
 - Put a preview of some of my blog posts on the homepage to make it seem less empty.

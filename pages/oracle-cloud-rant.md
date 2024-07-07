@@ -7,7 +7,7 @@ For quite a while I used to use oracle cloud to host pretty much all of my stuff
 
 I signed up for the platform on April 20th 2023, and ended up leaving/being terminated from the platform for literally no reason at all on the 29th of November, I ran 2 oracle cloud accounts and only 1 of them was terminated so I continued using the platform until late 2023 (around December) when I left the platform for good
 
-# Random Termination
+# Random Termination 
 When my account was terminated, I received ZERO communication from oracle about it, the only way I found out about it is my uptime monitor notified me about my server going offline and me trying to figure out the cause. While doing this I found that my dashboard was broken. Every page on it said “Permission denied” or something along those lines. Nothing said my account was terminated until I googled the cause and found a reddit post talking about having the exact same thing happening to them.
 
 The weird thing about this is the fact that I didn’t do anything wrong and even if I did I should have at least been notified about it, thankfully I wasn’t storing anything important on it but if I was then a ton of my stuff would have been completely wiped.

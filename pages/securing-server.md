@@ -5,7 +5,7 @@ slug: securing-server
 
 This post is made for debian based linux distros, most of this stuff won't work on other distros
 
-# Non-root account for logins 
+# Non-root account for logins
 When securing ssh on your server the first thing you want to to do is change the user you login as, start with making a new user with any username you want
 
 ``
@@ -23,7 +23,7 @@ I think it should be pretty obvious that using plaintext passwords for logging i
 
 Each key is seperated by a new line, simply paste the key in with no spaces or anything else around
 
-# Changing the SSH configuration
+# Changing the SSH configuration ⚙️
 This process can differ depending on your host, but for most servers the ssh config is located in /etc/ssh/sshd_config.d, in this file you want to change the following values
 
 ```

@@ -3,6 +3,8 @@ date: 2024-03-27
 description: Talking about why and how I added a comment system to my website using something called gicus, which integrates with github discussions to give me a free and simple comment system
 slug: comment-system
 
+### Notice: I have removed this (for now) as its been breaking and causing lots of issues.
+
 I have just recently added a commenting system to my website which appears on some pages and on all of my blog posts, it uses a system called gicus which integrates with Github Discussions to allow me to host comment sections without having to worry about authentication, storage or any of that.
 
 You wil see the box below and it simply just lets you login with github, after you do that you will be able to comment as much as you want. You can add the system to your website too if you have one, obviously no point doing it if you use wordpress or anything like that though since they have integrated comment systems.
