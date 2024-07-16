@@ -1,0 +1,16 @@
+title: Tectonic is Online
+date: 2024-07-11
+description: My brand new home server build to start off my homelab, an expensive server computer dedicated to running game servers and self-hosted applications.
+slug: tectonic-online 
+
+I've been planning this for the last couple months, after a lot of rushing and having some fun building it I'm happy to announce my new home server is officially up and running. 
+
+The specs have changed since last time so I'll walk you through it
+
+- CPU: Ryzen 5 5500 (4.2GHz, 6 Cores / 12 Threads)
+- RAM: 32GB DDR4 32MHz memory from Corsair
+- Storage: 240GB Crucial BX500 SSD
+- Motherboard: MSI B450M PRO-VDH Max 
+- Power Supply: Corsair RM750x
+- Case: Thermaltake Versa H18 Window Micro Case
+- Fans: Thermaltake 120mm & 3 120mm upHere long life fans
