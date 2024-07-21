@@ -23,7 +23,7 @@ I think it should be pretty obvious that using plaintext passwords for logging i
 
 Each key is seperated by a new line, simply paste the key in with no spaces or anything else around
 
-# Changing the SSH configuration ⚙️
+# Changing the SSH configuration
 This process can differ depending on your host, but for most servers the ssh config is located in /etc/ssh/sshd_config.d, in this file you want to change the following values
 
 ```
