@@ -1,9 +1,9 @@
-title: Securing your server
+title: Securing your linux server
 date: 2024-04-25
-description: In this post I talk about the processes and software I use to protect my server from being hacked into via ssh or being ddosed, it can be a time consuming and confusing process but this post makes it simple
-slug: securing-server
+description: The processes and software I use to protect my server from being hacked into via ssh or being ddosed, this is typically a time consuming and confusing process but its a lot easier than you'd think.
+slug: securing-your-linux-server
 
-This post is made for debian based linux distros, most of this stuff won't work on other distros
+This post is made for debian based linux distros, most won't work on other distros
 
 # Non-root account for logins
 When securing ssh on your server the first thing you want to to do is change the user you login as, start with making a new user with any username you want
