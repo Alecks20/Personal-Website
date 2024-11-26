@@ -11,20 +11,16 @@ import markdown
 app = Flask(__name__)
 cors = CORS(app)
 
-app.config["CORS_HEADERS"] = "Content-Type"
+#app.config["CORS_HEADERS"] = "Content-Type"
 FAVICON = "/public/static-assets/pepe-favicon.jpg"
 app.config['FLATPAGES_AUTO_RELOAD'] = True
 app.config['FLATPAGES_EXTENSION'] = '.md'
 flatpages = FlatPages(app)
 
-
 try:
     TRACKING_ID = os.environ["TRACKING_ID"]
 except:
     TRACKING_ID = " "
-
-MAX_ALLOWED_PASSWORD_LENGTH = 256
-ALLOWED_STRING_LETTERS: list[str] = [character for character in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*"]
 
 current_year = datetime.now().year
 
@@ -128,27 +124,10 @@ def page(path):
     html = markdown.markdown(page.body)
     return render_template('blog-post.html', post=page, post_body=html, favicon=FAVICON, navigation=navigation, footer=footer)
 
-def get_random_string(length: int) -> str:
-    """Generates a securely random string with the length provided"""
-    return "".join(map(str, [ALLOWED_STRING_LETTERS[get_random_string_index()] for _ in range(length)]))
-
-def get_random_string_index() -> int:
-    """Generates a securely random integer ranging from 0 (the beginning of the ALLOWED_STRING_LETTERS list) to the end of the ALLOWED_STRING_LETTERS list"""
-    return random.SystemRandom().randint(0, len(ALLOWED_STRING_LETTERS) - 1)
-
-@app.route("/api/generate-password/<int:password_length>")
-@cross_origin()
-def generate_password(password_length: int):
-    if (password_length > MAX_ALLOWED_PASSWORD_LENGTH or password_length < 1):
-        raise UnprocessableEntity(HTTPException(HTTPException(description=f"password_length should be an integer ranging from 1 - {MAX_ALLOWED_PASSWORD_LENGTH}, got {password_length} instead.")))
-    return {"password": get_random_string(password_length)}
-
 #Serving static content
 @app.route('/public/static-assets/<filename>', methods=['GET'])
 def get_image(filename):
     return send_from_directory("./assets/", filename)
-
-
 
 #Error handling
 @app.errorhandler(404)
